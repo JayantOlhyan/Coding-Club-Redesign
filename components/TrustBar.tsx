@@ -16,7 +16,10 @@ export function TrustBar() {
       <div className="max-w-[1120px] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Sub-band 1: Company Logos Placement Strip (Scaler pattern) */}
         <div className="text-left pb-10 border-b border-[var(--border)]">
-          <h2 className="text-base md:text-lg font-medium text-[var(--ink)] mb-4">
+          <h2
+            data-block={SECTION_MAP.trustBar.logoStripHeading}
+            className="text-base md:text-lg font-medium text-[var(--ink)] mb-4"
+          >
             {logoHeadingBlock.text}
           </h2>
 
@@ -41,7 +44,10 @@ export function TrustBar() {
 
         {/* Sub-band 2: Community Proof */}
         <div className="text-left pt-10">
-          <h2 className="text-xl md:text-2xl font-semibold text-[var(--ink)] mb-6 leading-tight">
+          <h2
+            data-block={SECTION_MAP.trustBar.communityHeading}
+            className="text-xl md:text-2xl font-semibold text-[var(--ink)] mb-6 leading-tight"
+          >
             {communityHeadingBlock.text}
           </h2>
 

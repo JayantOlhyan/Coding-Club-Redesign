@@ -123,10 +123,24 @@ async function runTests() {
   console.log(`  font-family: ${fontChecks.h1.fontFamily}`);
   console.log(`  font-weight: ${fontChecks.h1.fontWeight}`);
   console.log(`  font-size:   ${fontChecks.h1.fontSize}`);
-  console.log(`Computed style for <p>:`);
+  console.log(`Computed style for <p> (desktop):`);
   console.log(`  font-family: ${fontChecks.p.fontFamily}`);
   console.log(`  font-weight: ${fontChecks.p.fontWeight}`);
   console.log(`  font-size:   ${fontChecks.p.fontSize}`);
+
+  // Intrinsic Image Dimensions Check (Block 1)
+  const imgBlock1 = await page.$eval('img[src*="T8nPPpx"]', (el) => ({
+    width: el.getAttribute("width"),
+    height: el.getAttribute("height"),
+    naturalWidth: (el as HTMLImageElement).naturalWidth,
+    naturalHeight: (el as HTMLImageElement).naturalHeight,
+    loading: el.getAttribute("loading"),
+  }));
+  console.log(`\nBlock 1 <img> attributes check (manifest intrinsic):`);
+  console.log(`  width:        ${imgBlock1.width} (manifest: 501)`);
+  console.log(`  height:       ${imgBlock1.height} (manifest: 446)`);
+  console.log(`  loading:      ${imgBlock1.loading} (policy: eager)`);
+
 
   // 2. Network leaks verification
   console.log("\n=======================================================");
@@ -170,6 +184,19 @@ async function runTests() {
           : "PASSED (No horizontal scroll)") +
         ` | Screenshot: ${shotPath}`
     );
+
+    if (width === 375) {
+      const mobileStyles = await page.evaluate(() => {
+        const h1 = document.querySelector("h1");
+        const p = document.querySelector("p");
+        return {
+          h1Size: h1 ? window.getComputedStyle(h1).fontSize : "",
+          pSize: p ? window.getComputedStyle(p).fontSize : "",
+          pWeight: p ? window.getComputedStyle(p).fontWeight : "",
+        };
+      });
+      console.log(`  -> Mobile (375px) typography: <h1> fontSize=${mobileStyles.h1Size} (spec: 32px), <p> fontSize=${mobileStyles.pSize} (spec: 16px), <p> fontWeight=${mobileStyles.pWeight} (spec: 400)`);
+    }
   }
 
   // 4. Keyboard traversal check
