@@ -59,8 +59,22 @@ Per the governing client decision, the following 7 blocks from `content.json` ar
    - Blocks 77 ("Rajat Bansal") and 79 ("Ashutosh Negi") provide the name headings for Mentors 4 and 6 in Section 7 (resolving the deduplication omission).
    - Block 82 serves as the closing CTA for Section 6 (Curriculum).
 
-4. **Pricing Plan Name & Companies Banner (Blocks 0, 1, 2)**:
-   - Blocks 0 ("You will be next one to crack:"), 1 (Companies logo banner), and 2 ("6 Month Batch") originally lived in the Razorpay modal. They are now integrated directly into Section 11 (*Pricing*).
+4. **Blocks 0, 1 Reassigned to Section 2 (Trust bar) & Pricing Plan Name (Block 2)**:
+   - Blocks 0 ("You will be next one to crack:") and 1 (Companies logo banner) originally lived in the Razorpay modal. Reassigned to Section 2 (*Trust bar*) logo strip directly below the hero.
+   - Block 2 ("6 Month Batch") is integrated directly into Section 11 (*Pricing*) as the plan name.
+
+5. **Lazy-Loading Policy Applied by Viewport Position**:
+   - The original live site served 28 eager images, severely inflating initial page load.
+   - The redesign enforces a strict viewport-position loading policy:
+     - Hero logo / LCP image: `loading="eager"` with `fetchpriority="high"`.
+     - Section 2 logo strip (`Block 1`): `loading="eager"` (above the fold on desktop).
+     - **All other images on the page**: `loading="lazy"`.
+     - **All images**: `decoding="async"`.
+   - The source `lazy` boolean in `content.json` is preserved as metadata but superseded by viewport position.
+
+6. **PRD Rule 5 Amendment (WebP-Only Architecture)**:
+   - PRD Rule 5 originally called for "WebP with a JPEG/PNG fallback".
+   - Amended per client governing decision: ship **WebP only**, without `<picture>` wrappers or redundant fallback `<source>` elements. Original assets are stored in `/assets-source/fallback/` outside the static export bundle. WebP is universally supported across modern Android (Android 4.2+) and iOS (iOS 14+) baselines, cutting HTML weight without compatibility risk.
 
 ---
 
@@ -77,3 +91,13 @@ The following claims are present in `content.json` and are handled as follows:
 | **56** | `"Registration Closing In:"` | Above batch countdown | Rendered only when `showCountdown: true` in `COHORT` config. | Keep toggleable for real batch deadlines. |
 | **57** | `"Limited Seats, for 6 months batch!"` | Scarcity notice | Rendered verbatim as client prose. | Confirm actual batch seat cap. |
 | **292–294** | `"But Hurry! We're Filling Up Fast... We are limited on our virtual bandwidth. That means once we’ve reached capacity, we’re closing down this page... So Don’t Wait! Join The Coding Mafia Batch Now!"` | Post-curriculum urgency band | Rendered verbatim in `<CtaBand>` D. | Review whether "virtual bandwidth limit" claim requires substantiation. |
+
+---
+
+## 5. Third-Party Trademark and Association Claims
+
+Block 1 (`https://i.imgur.com/T8nPPpx.png`, rendered locally as `/images/T8nPPpx.webp`) displays third-party company logos (Google, Amazon, Microsoft, Flipkart, etc.) under Block 0's heading implying students will be placed at those companies (`"You will be next one to crack:"`).
+
+- **Exposure**: The client must confirm these represent verified placements with verifiable evidence. Using third-party corporate trademarks to imply affiliation, endorsement, or guaranteed hiring carries advertising-standards exposure (under ASCI Code for Educational Institutions and CCPA Guidelines) independent of the scarcity/urgency claims.
+- **Treatment**: Per client instructions, the graphic is preserved verbatim as client copy and rendered locally with `<!-- TODO: image-locked copy, awaiting client text -->`. Section 2 markup is structured so replacing the static image with an accessible, client-approved text/SVG logo row in the future requires only a component-level change.
+

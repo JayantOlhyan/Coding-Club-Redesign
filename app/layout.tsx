@@ -4,8 +4,8 @@ import "./globals.css";
 import rawContent from "@/content.json";
 
 export const metadata: Metadata = {
-  title: rawContent.meta?.title || "Coding Mafia | Crack Your Dream Tech Job with Us",
-  description: rawContent.meta?.description || "Coding Mafia 6-Month Career Accelerator",
+  title: rawContent.meta?.title,
+  description: rawContent.meta?.description,
   icons: {
     icon: "/favicon.ico",
   },

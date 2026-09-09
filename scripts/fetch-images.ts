@@ -4,7 +4,7 @@ import sharp from "sharp";
 
 const IMAGES_TXT_PATH = path.join(process.cwd(), "images.txt");
 const OUTPUT_DIR = path.join(process.cwd(), "public", "images");
-const FALLBACK_DIR = path.join(OUTPUT_DIR, "fallback");
+const FALLBACK_DIR = path.join(process.cwd(), "assets-source", "fallback");
 const MANIFEST_PATH = path.join(OUTPUT_DIR, "manifest.json");
 
 interface ImageMeta {

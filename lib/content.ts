@@ -1,4 +1,5 @@
 import rawContent from "@/content/content.json";
+import manifestData from "@/public/images/manifest.json";
 
 // --- Types ---
 
@@ -77,12 +78,38 @@ export function getBlocks<T extends ContentBlock>(indices: number[]): T[] {
 }
 
 // Local image filename mapping helper
+// Dimension manifest loader
+export interface ImageDimension {
+  width: number;
+  height: number;
+  webpFilename: string;
+}
+
+export function getImageMeta(src: string): ImageDimension {
+  const entry = (manifestData as Record<string, any>)[src];
+  if (entry) {
+    return {
+      width: entry.width,
+      height: entry.height,
+      webpFilename: entry.webpFilename,
+    };
+  }
+  const errorMessage = `[FATAL] Image manifest miss for src: "${src}". Map and manifest have diverged.`;
+  if (process.env.NODE_ENV !== "production") {
+    throw new Error(errorMessage);
+  }
+  console.error(errorMessage);
+  return { width: 0, height: 0, webpFilename: "" };
+}
+
+// Local image filename mapping helper
 export function getLocalImagePath(src: string): string {
   if (!src) return "";
-  // Map remote filename to local WebP filename
-  const filename = src.split("/").pop() || "";
-  const nameWithoutExt = filename.substring(0, filename.lastIndexOf(".")) || filename;
-  return `/images/${nameWithoutExt}.webp`;
+  const meta = getImageMeta(src);
+  if (meta.webpFilename) {
+    return `/images/${meta.webpFilename}`;
+  }
+  return "";
 }
 
 // --- Authoritative SECTION_MAP (Amended 13-Section Architecture) ---
@@ -98,9 +125,11 @@ export const SECTION_MAP = {
     indices: [4, 5, 6, 8, 9, 10, 14, 15, 16],
   },
   trustBar: {
-    heading: 37,
+    logoStripHeading: 0,
+    logoStripImage: 1,
+    communityHeading: 37,
     proofImages: [38, 39, 40, 41],
-    indices: [37, 38, 39, 40, 41],
+    indices: [0, 1, 37, 38, 39, 40, 41],
   },
   whoThisIsFor: {
     headings: [17, 18, 19],
@@ -220,8 +249,6 @@ export const SECTION_MAP = {
     indices: [337, 338, 339, 340, 341, 342, 343, 344, 345, 346, 347, 348, 349, 350],
   },
   pricing: {
-    modalHeading: 0,
-    companiesBanner: 1,
     planName: 2,
     headings: [351, 352],
     bullets: [353, 354, 355],
@@ -233,7 +260,7 @@ export const SECTION_MAP = {
       { heading: 363, text: 364 }, // WHY
     ],
     closingHeadings: [365, 366],
-    indices: [0, 1, 2, 351, 352, 353, 354, 355, 356, 357, 358, 359, 360, 361, 362, 363, 364, 365, 366],
+    indices: [2, 351, 352, 353, 354, 355, 356, 357, 358, 359, 360, 361, 362, 363, 364, 365, 366],
   },
   faq: {
     heading: 367,

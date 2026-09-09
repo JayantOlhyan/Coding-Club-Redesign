@@ -4,7 +4,7 @@ Authoritative accounting of all 36 images extracted from the live site (`images.
 
 | # | Block Index | Original Source URL | Target Section | Local Path | Status / Decision |
 |---|---|---|---|---|---|
-| 1 | 1 | `https://i.imgur.com/T8nPPpx.png` | Section 11 (Pricing) | `/images/T8nPPpx.webp` | Migrated. "You will be next one to crack:" companies banner |
+| 1 | 1 | `https://i.imgur.com/T8nPPpx.png` | Section 2 (Trust bar) | `/images/T8nPPpx.webp` | Migrated. "You will be next one to crack:" companies logo strip |
 | 2 | 3 | `https://rvs-pricing-card.vercel.app/tick.svg` | Section 11 (Pricing) | Inline SVG | **Dropped as external image.** Replaced with clean inline SVG checkmark per PRD Rule 5. |
 | 3 | 4 | `https://i.imgur.com/UpvZAM8.png` | Section 1 (Hero) | `/images/UpvZAM8.webp` | Migrated. Coding Mafia header logo |
 | 4 | 20 | `https://i.imgur.com/9pNIumb.jpg` | Section 3 (Who this is for) | `/images/9pNIumb.webp` | Migrated. Editorial student illustration |
