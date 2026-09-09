@@ -1,0 +1,1999 @@
+{
+  "meta": {
+    "title": "Coding Mafia | Crack Your Dream Tech Job with Us",
+    "viewport": "initial-scale=1",
+    "description": "Tired of rejections? Coding Mafia is your 6-month career accelerator with expert mentors, real projects, mock interviews & guaranteed results. Land your dream job even if you're from a Tier 3 college or just starting out.",
+    "keywords": "Coding career program, tech job training, placement course, coding for beginners, Tier 3 college jobs, coding mentorship, mock interviews, resume building, LinkedIn branding, GitHub portfolio, live classes, job-ready skills, Affordable Pricing, Community Support, Genuine Program, Dream Job, Internship, Skills, Interviews, Placements, Coding Maifa, 6 Months Coding Mafia, Coding Club Placement Program, Crack dream companies",
+    "author": "Coding Mafia | Crack Your Dream Tech Job with Us",
+    "robots": "index, follow",
+    "og:title": "Cracking High-Paying Job/Intern Offers Made Easy with 'Coding Mafia' - Your Path to Success in Tech",
+    "og:description": "Unlock the doors to high-paying job and internship offers with 'Coding Mafia' - the comprehensive online program that guides you every step of the way, even if you're new to coding. Start, prepare, and crack those dream tech opportunities",
+    "og:image": "https://i.imgur.com/vJsTJIO.png",
+    "og:url": "https://codingclub.tech"
+  },
+  "blocks": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "You will be next one to crack:"
+    },
+    {
+      "type": "image",
+      "src": "https://i.imgur.com/T8nPPpx.png",
+      "alt": "",
+      "lazy": true
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "6 Month Batch"
+    },
+    {
+      "type": "image",
+      "src": "https://rvs-pricing-card.vercel.app/tick.svg",
+      "alt": "",
+      "lazy": false
+    },
+    {
+      "type": "image",
+      "src": "https://i.imgur.com/UpvZAM8.png",
+      "alt": "",
+      "lazy": false
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "Limited Seats. Registration Closing In"
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "How To Start, Prepare, Or Crack High Paying Job/Intern Offers Using ‘Coding Mafia’ (Online)!"
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "How To Start, Prepare, Or Crack High Paying Job/Intern Offers Using A ‘Coding Mafia’ (Online)!"
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "The Only 6‑Month Program Designed for Students Starting from Zero!"
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "6-month step‑by‑step live mentorship program"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "LIVE! Starting Monday"
+    },
+    {
+      "type": "field",
+      "input_type": "name",
+      "name": "name",
+      "placeholder": "Full Name",
+      "required": false
+    },
+    {
+      "type": "field",
+      "input_type": "email",
+      "name": "email",
+      "placeholder": "Enter Primary Email Address Here…",
+      "required": false
+    },
+    {
+      "type": "field",
+      "input_type": "custom_type",
+      "name": "cs_phone_number",
+      "placeholder": "Phone Number (Optional)",
+      "required": false
+    },
+    {
+      "type": "cta",
+      "text": "Join The Coding Mafia!",
+      "href": "#submit-form"
+    },
+    {
+      "type": "cta",
+      "text": "Join The Coding Mafia!",
+      "href": "#open-popup"
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "Don’t Wait! Registration Closes Soon!"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Is This Program"
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "the Right Place for You?"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Yes! This ‘Coding Mafia Batch’ is especially for you if..."
+    },
+    {
+      "type": "image",
+      "src": "https://i.imgur.com/9pNIumb.jpg",
+      "alt": "",
+      "lazy": true
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Looking for Proven Success? Many students who have joined this online batch have shared their success stories of landing high-paying jobs/interns in top companies. The online batch is designed to help you achieve similar success in your career."
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Looking for Structured Curriculum? The online batch offers a well-structured curriculum that covers a wide range of topics, from coding and data structures to full-stack development and aptitude. This comprehensive approach ensures you gain the skills needed to excel in interviews and placements/internships."
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Looking For One-on-One Guidance from IT Mentors? You can expect one-on-one mentorship from experienced instructors who are dedicated to helping you succeed. This personalized guidance will be invaluable in your journey to secure your dream job/internship."
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Looking For Student-friendly pricing — high value, low cost? The online batch is designed to be affordable, making it accessible to a wider range of students. The value you receive for the cost is outstanding, especially considering the comprehensive curriculum and mentorship."
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Looking For Community Support? Joining this online batch means becoming part of a supportive community. You'll have the opportunity to connect with like-minded individuals, collaborate on projects, and get help with doubts and questions."
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Looking For Trustworthy and Genuine? The online batch is known for its trustworthiness and genuineness. You can rely on the program to provide the knowledge and skills you need to excel in interviews and placements."
+    },
+    {
+      "type": "paragraph",
+      "level": null,
+      "text": "If you nodded or said “yes” to any of the above, then YES, this ONLINE 6-Month Coding Mafia Batch is 100% for you only."
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "Sign up today..."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "...and We'll guide you, step-by-step, on how to start on a successful coding journey with our 'Coding Mafia.' This program is tailored to benefit you, your career, or your job/internship opportunities by using highly effective learning methods. As a result, you'll start receiving numerous job offers from Product-Based Companies, Startups, MNCs, and Service-Based Companies. Your coding skills will open doors to incredible career opportunities!"
+    },
+    {
+      "type": "cta",
+      "text": "Join The ‘Coding Mafia Batch’ NowClick Here To Save Your Seat Now",
+      "href": "#open-popup"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "“WHY JOIN THIS PROGRAM ?”"
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "READ BENEFITS"
+    },
+    {
+      "type": "image",
+      "src": "https://i.imgur.com/fHYcURb.jpg",
+      "alt": "",
+      "lazy": true
+    },
+    {
+      "type": "image",
+      "src": "https://i.imgur.com/TVQ3UW7.png",
+      "alt": "",
+      "lazy": true
+    },
+    {
+      "type": "image",
+      "src": "https://i.imgur.com/ZVKJk4p.png",
+      "alt": "",
+      "lazy": true
+    },
+    {
+      "type": "paragraph",
+      "level": null,
+      "text": "Discover the ultimate 'Value for Money' course designed for individuals who aspire to attain guaranteed success but struggle to find a trusted and truly valuable program for their career!!!"
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "Join our incredibly trustworthy community today!"
+    },
+    {
+      "type": "image",
+      "src": "https://i.imgur.com/Iij0gld.png",
+      "alt": "",
+      "lazy": true
+    },
+    {
+      "type": "image",
+      "src": "https://i.imgur.com/Q7x49Ry.png",
+      "alt": "",
+      "lazy": true
+    },
+    {
+      "type": "image",
+      "src": "https://i.imgur.com/YQZKo1h.png",
+      "alt": "",
+      "lazy": true
+    },
+    {
+      "type": "image",
+      "src": "https://i.imgur.com/hlc05Wt.png",
+      "alt": "",
+      "lazy": true
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Learn from Rishabh Jain & Industry Experts:"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Coding Mafia!"
+    },
+    {
+      "type": "paragraph",
+      "level": null,
+      "text": "When you say “yes” and join the batch today, we’ll prepare you, in just 6 Months, how to easily (and quickly) start and learning top skills for cracking high paying internships/jobs!"
+    },
+    {
+      "type": "cta",
+      "text": "Join The ‘Coding Mafia Batch’Click Here To Save Your Seat Now",
+      "href": "#open-popup"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Here’s what you can expect from the 6-months program:"
+    },
+    {
+      "type": "image",
+      "src": "https://codingclub.tech/static/images/cm/leftarrow.svg",
+      "alt": "",
+      "lazy": true
+    },
+    {
+      "type": "image",
+      "src": "https://codingclub.tech/static/images/cm/rightarrow.svg",
+      "alt": "",
+      "lazy": true
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "LIVE Coding Mafia Batch Starts On Monday!"
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "“2 Hours Daily Live Classes - Your Fastest Route to a Job."
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "And We'll Show You In Just 6 Months How To"
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "Use Our Coding Program to Help Beginners, Learn Coding and Secure Offers from Top Tech Companies"
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "Faster, More Effectively, and More Confidently"
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "Than Any Other Learning Strategy You've Seen"
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "\"No Coding Background? No Problem - We Build You From Ground Zero, Have No Prior Tech Experience, Don't Have Resume, or New to the World of Coding....!\" - Rishabh Jain"
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "Registration Closing In:"
+    },
+    {
+      "type": "paragraph",
+      "level": null,
+      "text": "Limited Seats, for 6 months batch!"
+    },
+    {
+      "type": "image",
+      "src": "https://codingclub.tech/static/images/cm/down.svg",
+      "alt": "",
+      "lazy": false
+    },
+    {
+      "type": "cta",
+      "text": "Join Coding Mafia Batch!Click Here To Join The Coding Mafia Batch",
+      "href": "#submit-form"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Module 1"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Choose Java or C++Language Basics"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "(Starting from scratch and practice on Hackkerrank)"
+    },
+    {
+      "type": "paragraph",
+      "level": null,
+      "text": "First 1-2 weeks, we are going to make you learn coding concepts from beginning along with practice on HACKERRANK"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Helloworld"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Data Types"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Variable"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Variable Scope"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Operators"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Loop Types"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Functions"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Arrays"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Strings"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Searching and Sorting"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Recursion"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Teaching Assistance"
+    },
+    {
+      "type": "image",
+      "src": "https://i.imgur.com/8oI4yCa.png",
+      "alt": "",
+      "lazy": true
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Rajat Bansal"
+    },
+    {
+      "type": "image",
+      "src": "https://i.imgur.com/lM0DExl.png",
+      "alt": "",
+      "lazy": true
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Ashutosh Negi"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Main Instructor"
+    },
+    {
+      "type": "image",
+      "src": "https://i.imgur.com/00Qw1Td.jpg",
+      "alt": "",
+      "lazy": true
+    },
+    {
+      "type": "cta",
+      "text": "Join Coding Mafia Batch!Click Here To Save Your Seat Now",
+      "href": "#open-popup"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Module 2"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Data Structures And Algorithms"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Choose Java or C++ (Practice on Codechef, Leetcode, Interviewbit)"
+    },
+    {
+      "type": "paragraph",
+      "level": null,
+      "text": "We will keep learning and practicing problems till end of the course to reach target of 800+ problems practice on top platforms like Codechef, Leetcode, InterviewBit, Spoj Continued in Module 3.."
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Time & Space Complexity"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Array"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Adhoc Problems"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Game Theory"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Number Theory"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Linked List"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Stacks"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Queues"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Hashing"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Heaps"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Priority Queues"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Bit Manipulation"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Greedy Algorithms"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Binary Trees"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Binary Search Trees"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Module 3"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Advanced Data Structures And Algorithms"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Choose Java or C++ (Practice on Leetcode, SPOJ, CSES Platfoms)"
+    },
+    {
+      "type": "paragraph",
+      "level": null,
+      "text": "We will keep learning and practicing problems till end of the course to reach target of 800+ problems practice on top platforms like Codechef, Leetcode, InterviewBit, Spoj"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Tries"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Graphs"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "BFS & DFS"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Backtracking"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Divide & Conquer"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Dynamic Programming"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Segment Trees"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Module 4"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Python Basics"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "(Practice on Hackerrank)"
+    },
+    {
+      "type": "paragraph",
+      "level": null,
+      "text": "Target: Improvement of resume skills. Learning basics of Python concepts along with practice on Hackerrank platform. Beginner to advanced Module along with projects development"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Building Foundation : Python Core"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Introduction to Python"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Variables"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Python Objects, Numbers & Booleans, Containers"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Operators - Arithmetic,Bitwise,Comparison,Assignment"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Conditions - if-else, if-elif-else"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Loops - for, while"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Break and Continue Statements"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Practicing problems on Hackerrank"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Mini Project : Send Email using Python"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Python Data Structures"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Lists - Object, Methods, List Comprehension"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Tuples - Object, Methods, Immutability"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Strings - Object, Methods, Splitting, Joining, Format Function"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Sets, Dictionary, View Objects"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "OOPS Concepts and Working with Files"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Practicing problems, Become 4 Star Coder on Hackerrank"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Mini Project : Automate Tinder using Python"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Using GIT and Python Libraries"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Version Control System : Git"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Python Libraries in Depth"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Numpy, Pandas, Matplotlib"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Solving Assignments"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Mini Project : Web Crawler using BeautifulSoup"
+    },
+    {
+      "type": "image",
+      "src": "https://i.imgur.com/A8rtTVc.jpg",
+      "alt": "",
+      "lazy": true
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Module 5"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Machine Learning"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "(Along with Mini and Major Projects)"
+    },
+    {
+      "type": "paragraph",
+      "level": null,
+      "text": "Target: Improvement of resume skills. Learn and develop projects like Face Recognition System, Handwritten Digit Recognition, Air Quality Prediction, Amazon Recommendation System, Diabetes Classification, Word Analogies and Dominant Color Extraction."
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Getting Started with Machine learning"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Supervised Learning"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Regression Techniques"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Mini Project : Air Quality Prediction"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Gradient Descent"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Logistic Regression"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Mini Project : Diabetes Classification"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Unsupervised Learning"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "K-Nearest Neighbors"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Major Project : HandWritten Digit Recognition"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "OpenCV"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Mini Project : Face Recognition"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Mini Project : Build Snapchat Filter using OpenCV"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "KMeans Clustering"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Mini Project : Dominant Color Extraction"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Language Models"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Natural Language Processing (NLP)"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Major Project : Amazon Recommendation System"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Word Embeddings & Neural Networks"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Module 6"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Java: Core + Advanced"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "(Practice on Hackerrank + Projects)"
+    },
+    {
+      "type": "paragraph",
+      "level": null,
+      "text": "Learn Core Java, Advanced Java and Full Stack Development. BUILD YOUR OWN TWITTER"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Installations"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Introduction to Java - Variable & Arrays"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Practicing on Hackerrank"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Operators, Control Statements, Loops"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Maths, Strings & Date"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Starting With Data Structures"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Data Structures - I"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Data Structures - II"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "OOPs and Exception Handling - I"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "OOPs and Exception Handling - II"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Starting With First Project"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Creating Project - Knowing about IDE"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "File, Thread & Networking"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Mini Project- Word Top Frequency Analyser"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Dependencies using Gson & Json"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Parsing Html"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Learning about Jsoup"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Daily practice exercise"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Starting With Advanced Java"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Database : Setting up database"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Database : Using JOOQ - Connecting Database"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Running queries"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Mini Project - Multithreaded Crawling using Advanced Java"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Major Project: Fastest Bollywood Movies Data Collector"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "REST APIS"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Major Project: Wikipedia Fetcher API"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Module 7"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Full Stack Development"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "( Major Project using Frontend & Backend)"
+    },
+    {
+      "type": "paragraph",
+      "level": null,
+      "text": "Learn HTML, CSS, Javascript for front-end part and backend using Spring MVC in Java. Build Your Own TWITTER PROJECT scalable upto 1 Million+ User Support"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Starting With Frontend"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Learning Frontend & Backend"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Learning basics of HTML"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Learning basics of CSS"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Learning basics of Javascript + Jquery"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Starting With Backend"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Backend using Spring MVC - Getting Started"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Explaining Configurations"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Building first REST API"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Running first REST API"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Starting With Twitter Project"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Major Project :Twitter Clone"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Building Twitter - Sign Up Page"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Building Twitter - Login Page"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Building Twitter - Profile Page"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Building Twitter - Create First Tweet"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Adding More Features"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Building Twitter - Home Feed"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Building Twitter - Adding Followers"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Building Twitter - Using CDN & Redis"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Module 8"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Aptitude + Communication"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "(Along with Personal Development)"
+    },
+    {
+      "type": "paragraph",
+      "level": null,
+      "text": "Target : Preparation for Aptitude rounds. Learn mathematical, logical reasoning, puzzle based problem solving with faster calculations"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Number Analogy"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Missing Puzzles"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Geometry"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Probability"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Permutation"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Blood Relation"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Combination"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Time and Work"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Time, Speed and Distance"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Percentage, Profit and Loss"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Average, Allegation and Mixtures"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Ratio, Proportion and Partnership"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Problems on Ages"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Simple Equations"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Number Series"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Logarithms"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Clocks and Calendars"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Crypt Arithmetic"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Coding and Decoding"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Number Puzzles"
+    },
+    {
+      "type": "image",
+      "src": "https://i.imgur.com/Vhbv4ng.jpg",
+      "alt": "",
+      "lazy": true
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Module 9"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Computer Science Fundamentals"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "(Practice for theory rounds)"
+    },
+    {
+      "type": "paragraph",
+      "level": null,
+      "text": "Target: Learning core concepts for theory and MCQ rounds. Preparation for companies which specially ask theory problems in MCQ and one-to-one rounds"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Object Oriented Programming"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Classes and Objects"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Polymorphism, Overriding, Overloading"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Encapsulation"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Abstraction"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Access Modifiers"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Inheritance"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Friend and Virtual functions in C++"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "STL (Standard Template Library) in Depth"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Operating System"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Operating System and its Types"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Multiprogramming, Multiprocessing and Multithreading"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Process Management and Scheduling"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Process Synchronization"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Deadlock"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Memory Management and Virtual Memory"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "File systems"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "I/O systems"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Protection and Security"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Database Management System"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Introduction to DBMS"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Architectures"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "ER Model"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Relational Model"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Keys in Relational Model"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Database Normalization and Normal Forms"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Concurrency Control"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Indexing in Database"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "B and B+ Trees"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "ACID and BASE Properties"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "SQL Queries in Depth : Hands On"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Computer Networks"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Introduction to Computer Networks"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "TCP/IP vs OSI Model"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Circuit Switching vs Packet Switching"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Flow Control Protocols"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "IP and Classful Addressing"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Classless Addressing"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Routing Protocols"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "ARP & DHCP"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Transport Layer"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "TCP & UDP"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Application Layer"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "HTTP & GRPC Protocol"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "But Hurry! We're Filling Up Fast..."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "We are limited on our virtual bandwidth. That means once we’ve reached capacity, we’re closing down this page..."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "So Don’t Wait! Join The Coding Mafia Batch Now!"
+    },
+    {
+      "type": "cta",
+      "text": "Join Coding Mafia Batch !Click Here To Save Your Seat Now",
+      "href": "#open-popup"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Your Mentors During This"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "6-Month Coding Mafia Batch!"
+    },
+    {
+      "type": "image",
+      "src": "https://i.imgur.com/UgOQsVq.png",
+      "alt": "",
+      "lazy": true
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Rishabh Jain"
+    },
+    {
+      "type": "paragraph",
+      "level": null,
+      "text": "I'm Rishabh Jain, a dedicated professional with over a decade of experience in my field. I have a deep passion for mentoring, and there's nothing quite like the satisfaction I feel when students reach out to share their success stories, telling me they've secured job or internship offers. It's been an incredibly fulfilling experience of being founder and CEO at Coding Club India. I've the privilege of mentoring 5 Lakhs+ students community of Coding Club India."
+    },
+    {
+      "type": "image",
+      "src": "https://i.imgur.com/Gk5zCrt.jpg",
+      "alt": "",
+      "lazy": false
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Srishti Jain"
+    },
+    {
+      "type": "paragraph",
+      "level": null,
+      "text": "I am Srishti Jain, an MBA passout from Biyani College, Jaipur. I'm passionate about empowering individuals to unlock their full potential in the professional world. As an experienced educator, my expertise lies in teaching essential skills such as aptitude, HR interview techniques, resume formatting, and effective communication. I am dedicated to equipping my students with the knowledge and confidence they need to excel in today's competition. Even if you're a beginner preparing to enter the workforce or a professional looking to enhance your skill set, I'm here to guide you on your path to success."
+    },
+    {
+      "type": "image",
+      "src": "https://i.imgur.com/eCPTtkh.jpg",
+      "alt": "",
+      "lazy": false
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Abhishek Gupta"
+    },
+    {
+      "type": "paragraph",
+      "level": null,
+      "text": "Hi there! I'm Abhishek, I have worked in Zomato previously as software developer. I love meeting new people and helping them in the best way possible. I am software developer specializing in backend systems and infrastructure. Currently, I am working at okcredit where I contribute to building robust backend.Beyond coding, I am passionate about sharing my knowledge and insights with others. While I occasionally write about software-related topics, I'm always striving to contribute more to the tech community."
+    },
+    {
+      "type": "image",
+      "src": "https://i.imgur.com/YD4Im5B.jpg",
+      "alt": "",
+      "lazy": false
+    },
+    {
+      "type": "paragraph",
+      "level": null,
+      "text": "I like solving problems and helping juniors, I have been driven by my intellectual curiosity to find answers to the most pressing questions. Currently, I am working at Media.net where I contribute to backend systems. I love mentoring students. I actively participated in various coding contests in sites like Codeforces , Codechef, Leetcode during my college time. Building and contributing to software that can positively impact lives of people is really what I want do in future."
+    },
+    {
+      "type": "image",
+      "src": "https://i.imgur.com/cmD6SeN.jpg",
+      "alt": "",
+      "lazy": false
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Siddharth Singh"
+    },
+    {
+      "type": "paragraph",
+      "level": null,
+      "text": "Hello, I'm Siddharth Singh, your dedicated teaching assistant for Data Structures and Algorithms. Through interactive lessons, problem-solving sessions, and hands-on practice, I'm committed to helping you grasp these concepts with clarity and confidence. Together, we'll sharpen your problem-solving abilities, enhance your coding skills, and prepare you to shine in interviews with top tech companies. Let's embark on this exciting journey of learning and professional growth together!"
+    },
+    {
+      "type": "image",
+      "src": "https://i.imgur.com/FWqBTZ7.jpg",
+      "alt": "",
+      "lazy": false
+    },
+    {
+      "type": "paragraph",
+      "level": null,
+      "text": "I am Ashutosh Negi, your dedicated mock interview coach, here to assist you in cracking those challenging coding interviews with top tech companies. My goal is to simulate real interview scenarios, provide constructive feedback, and help you refine your problem-solving skills and coding techniques. I have solved over 1000+,combine on platforms like Leetcode and InterviewBit.. Let's work together to turn your interview dreams into successful offers and exciting career opportunities!"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Your Chance To Achieve The Success Dream You've Always Wanted Is Right Now..."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "...Will You Take It?"
+    },
+    {
+      "type": "cta",
+      "text": "Join Coding Mafia Batch!Click Here To Join The Coding Mafia Batch",
+      "href": "#open-popup"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Success Stories From"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Our Coding Family!"
+    },
+    {
+      "type": "image",
+      "src": "https://i.imgur.com/qbfZvmq.png",
+      "alt": "",
+      "lazy": false
+    },
+    {
+      "type": "image",
+      "src": "https://i.imgur.com/MMCoOpA.png",
+      "alt": "",
+      "lazy": false
+    },
+    {
+      "type": "image",
+      "src": "https://i.imgur.com/eWdHZdn.png",
+      "alt": "",
+      "lazy": false
+    },
+    {
+      "type": "image",
+      "src": "https://i.imgur.com/2MTEbaI.png",
+      "alt": "",
+      "lazy": false
+    },
+    {
+      "type": "image",
+      "src": "https://i.imgur.com/pZc6DjO.png",
+      "alt": "",
+      "lazy": false
+    },
+    {
+      "type": "image",
+      "src": "https://i.imgur.com/BN1Rhi9.png",
+      "alt": "",
+      "lazy": false
+    },
+    {
+      "type": "image",
+      "src": "https://i.imgur.com/0S4w9zl.png",
+      "alt": "",
+      "lazy": false
+    },
+    {
+      "type": "image",
+      "src": "https://i.imgur.com/XATS34j.png",
+      "alt": "",
+      "lazy": false
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Batch Reviews From"
+    },
+    {
+      "type": "embed",
+      "src": "https://player.vimeo.com/video/878595620?badge=0&autopause=0&quality_selector=1&player_id=0&app_id=58479"
+    },
+    {
+      "type": "embed",
+      "src": "https://player.vimeo.com/video/878595591?badge=0&autopause=0&quality_selector=1&player_id=0&app_id=58479"
+    },
+    {
+      "type": "embed",
+      "src": "https://player.vimeo.com/video/878595562?badge=0&autopause=0&quality_selector=1&player_id=0&app_id=58479"
+    },
+    {
+      "type": "embed",
+      "src": "https://player.vimeo.com/video/878595541?badge=0&autopause=0&quality_selector=1&player_id=0&app_id=58479"
+    },
+    {
+      "type": "embed",
+      "src": "https://player.vimeo.com/video/878595506?badge=0&autopause=0&quality_selector=1&player_id=0&app_id=58479"
+    },
+    {
+      "type": "embed",
+      "src": "https://player.vimeo.com/video/878595461?badge=0&autopause=0&quality_selector=1&player_id=0&app_id=58479"
+    },
+    {
+      "type": "embed",
+      "src": "https://player.vimeo.com/video/878595432?badge=0&autopause=0&quality_selector=1&player_id=0&app_id=58479"
+    },
+    {
+      "type": "embed",
+      "src": "https://player.vimeo.com/video/878595401?badge=0&autopause=0&quality_selector=1&player_id=0&app_id=58479"
+    },
+    {
+      "type": "embed",
+      "src": "https://player.vimeo.com/video/878584406?badge=0&autopause=0&quality_selector=1&player_id=0&app_id=58479"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Discover the hidden coder inside you."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What You Can Expect From The 'Coding Mafia Batch' Masterclass !"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "BEFORE The Program:"
+    },
+    {
+      "type": "image",
+      "src": "https://i.imgur.com/a52HMhN.png",
+      "alt": "",
+      "lazy": true
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Confused how to start..."
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "No good resume to get referals"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Don't like coding because nothing works"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Often confused, lost, or stuck while trying to code to learn..."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "AFTER The Program:"
+    },
+    {
+      "type": "image",
+      "src": "https://i.imgur.com/H7BkyVE.png",
+      "alt": "",
+      "lazy": true
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "A fully built-out Coding Mafia Batch that works regardless of your knowledge"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "A planned strategy for resume by the experienced mentors"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Falling in love with coding because now you “get it”!"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Knowing EXACTLY how to solve any hard coding problems on tips!"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Here's Everything You Get When You Sign Up For"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "'The Coding Mafia Batch' Today!"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "Finish 800+ Problems Access to our exclusive 'Coding Mafia Batch' live classes, assignements, where you can get hands-on tasks, and daily homework during the program, You can pause and continue course anytime.! (UNFORGETTABLE EXPERIENCE!)"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "INTERVIEW EXPERT! You will be best coder to solve any hard problems of coding even on tips. Take bigger challenges with your mentor step by step to achieve success! (800+ DSA PROBLEMS)"
+    },
+    {
+      "type": "bullet",
+      "level": null,
+      "text": "BONDING WITH MENTORS! Our mentors for learning coding go beyond just teaching; they forge heart-to-heart connections with every student. They provide unparalleled personal attention, ensuring that your learning experience is not just about coding but about your growth and success! (HEART TO HEART)"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Normally: Rs.5833 Per Month"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Discount Expiring: 40% DISCOUNT!"
+    },
+    {
+      "type": "cta",
+      "text": "YES, I Want To Join Coding Mafia BatchClick to avail 40% discount. Batch is about to start",
+      "href": "#open-popup"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "WHAT"
+    },
+    {
+      "type": "paragraph",
+      "level": null,
+      "text": "6-Month ONLINE BATCH: 'Coding Mafia Batch'"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "WHEN"
+    },
+    {
+      "type": "paragraph",
+      "level": null,
+      "text": "Starts on Registration Closing on"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "WHY"
+    },
+    {
+      "type": "paragraph",
+      "level": null,
+      "text": "So you can finally have the life and career you want, without the hassles and headaches of unguided coding journey!"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Now's The Time Get Stared For Unforgetable Experience..."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Join 'The Coding Mafia Batch' Today!"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Frequently Asked Questions"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Is this course is beginner friendly ?"
+    },
+    {
+      "type": "paragraph",
+      "level": null,
+      "text": "Yes we will teach you all from very basic to advanced."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Can I do this course with my college classes or along with job?"
+    },
+    {
+      "type": "paragraph",
+      "level": null,
+      "text": "Yes, it can be done along. Also you will have first sync up session with Rishabh Jain regarding time management."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "How long is the course access?"
+    },
+    {
+      "type": "paragraph",
+      "level": null,
+      "text": "We will give you access till you crack company of your dream."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Will there be a Certificate of completion?"
+    },
+    {
+      "type": "paragraph",
+      "level": null,
+      "text": "Yes, you will get a certificate after finishing this course."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Will there be LIVE classes?"
+    },
+    {
+      "type": "paragraph",
+      "level": null,
+      "text": "Yes, there will be live classes 3-4 times in a week. Timings will be 9 PM to 10 PM."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Any daily live doubt support ?"
+    },
+    {
+      "type": "paragraph",
+      "level": null,
+      "text": "There will be daily live doubt support with over GMeet from 8 pm to 11 pm. Rest day you can discuss your doubts in batch Whatsapp Groups."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "What is the duration of batch ?"
+    },
+    {
+      "type": "paragraph",
+      "level": null,
+      "text": "It will take around 6 months and also if you are in hurry consult with team to join “Priority batch” and cover all in 3-4 months."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Can I connect with team before I join ?"
+    },
+    {
+      "type": "paragraph",
+      "level": null,
+      "text": "Call on 7303013866 or Whatsapp."
+    },
+    {
+      "type": "image",
+      "src": "https://i.imgur.com/DVveEzv.png",
+      "alt": "",
+      "lazy": true
+    },
+    {
+      "type": "cta",
+      "text": "Linkedin",
+      "href": "https://linkedin.com/company/coding-club/"
+    },
+    {
+      "type": "cta",
+      "text": "Instagram",
+      "href": "https://instagram.com/codingclubindia"
+    },
+    {
+      "type": "cta",
+      "text": "Terms And Conditions",
+      "href": "/terms"
+    },
+    {
+      "type": "cta",
+      "text": "Privacy Policy",
+      "href": "/policy"
+    },
+    {
+      "type": "cta",
+      "text": "📲 Talk To Mentor",
+      "href": "https://wa.me/917303013866?text=Hi%20I%20want%20to%20talk%20to%20mentor"
+    }
+  ]
+}

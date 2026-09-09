@@ -1,0 +1,19 @@
+CONTENT INVENTORY
+==================================================
+bullet       203
+heading      95
+image        36
+paragraph    30
+cta          14
+embed        9
+field        3
+
+images total        : 36
+  hosted on imgur   : 32   <-- must be migrated
+  external host     : 33
+
+TEXT LOCKED INSIDE IMAGES (not extractable, needs manual re-typing):
+  - pricing / discount graphics
+  - benefits panels
+  - testimonial + placement screenshots
+  - before/after comparison panels
