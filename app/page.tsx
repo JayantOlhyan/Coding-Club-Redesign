@@ -8,6 +8,7 @@ import { Curriculum } from "@/components/Curriculum";
 import { Mentors } from "@/components/Mentors";
 import { Outcomes } from "@/components/Outcomes";
 import { Reviews } from "@/components/Reviews";
+import { BeforeAndAfter } from "@/components/BeforeAndAfter";
 
 export default function Home() {
   return (
@@ -53,6 +54,9 @@ export default function Home() {
 
       {/* Section 9: Reviews (Blocks 327-336) */}
       <Reviews />
+
+      {/* Section 10: Before & After (Blocks 337-350) */}
+      <BeforeAndAfter />
 
       {/* Target anchor for Hero CTA scroll */}
       <div id="lead-form" className="sr-only" aria-hidden="true" />
