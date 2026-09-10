@@ -86,7 +86,7 @@ The following claims are present in `content.json` and are handled as follows:
 
 | Block Index | Text / Claim | Original Context | Redesign Treatment | Client Action Required |
 |---|---|---|---|---|
-| **5** | `"Limited Seats. Registration Closing In"` | Top countdown bar | Handled via `<CohortDate />` component. Rendered with fixed date ("Next batch starts 6 October 2026") without resetting fake countdown timer. | Confirm cohort start date. |
+| **5** | `"Limited Seats. Registration Closing In"` | Top announcement pill | Per Phase 0 & Phase 2 ruling, when `showCountdown: false`, the dangling trailing clause (`"Registration Closing In"`) is suppressed to prevent an orphaned sentence fragment that stops mid-thought; renders cleanly as `"Limited Seats."` alongside fixed cohort start date in `<CohortDate />`. If `showCountdown` is toggled true, the full string renders followed by active countdown timer. | Confirm cohort start date. |
 | **16** | `"Don’t Wait! Registration Closes Soon!"` | Below hero CTA button | Rendered verbatim as supporting notice. | Review phrasing for compliance. |
 | **56** | `"Registration Closing In:"` | Above batch countdown | Rendered only when `showCountdown: true` in `COHORT` config. | Keep toggleable for real batch deadlines. |
 | **57** | `"Limited Seats, for 6 months batch!"` | Scarcity notice | Rendered verbatim as client prose. | Confirm actual batch seat cap. |
