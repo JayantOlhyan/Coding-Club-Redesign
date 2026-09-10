@@ -5,6 +5,7 @@ import { CtaBandA, CtaBandB, CtaBandC, CtaBandD } from "@/components/CtaBand";
 import { Benefits } from "@/components/Benefits";
 import { WhatToExpect } from "@/components/WhatToExpect";
 import { Curriculum } from "@/components/Curriculum";
+import { Mentors } from "@/components/Mentors";
 
 export default function Home() {
   return (
@@ -38,6 +39,9 @@ export default function Home() {
 
       {/* CTA Band Instance D (Blocks 292-295) */}
       <CtaBandD />
+
+      {/* Section 7: Mentors (Blocks 75-81, 296-313) */}
+      <Mentors />
 
       {/* Target anchor for Hero CTA scroll */}
       <div id="lead-form" className="sr-only" aria-hidden="true" />
