@@ -37,11 +37,11 @@ export function Pricing() {
     <section
       id="pricing"
       aria-label="Pricing"
-      className="w-full bg-[var(--surface-2)] border-b border-[var(--border)] py-16 md:py-24"
+      className="w-full bg-[var(--surface-2)] py-16 md:py-24"
     >
-      <div className="max-w-[1120px] mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Header */}
-        <div className="text-left mb-12 max-w-[780px]">
+      <div className="max-w-[620px] mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Section Header: Centered */}
+        <div className="text-center mb-10">
           <span
             data-block={SECTION_MAP.pricing.headings[0]}
             className="block text-sm md:text-base font-normal text-[var(--body)] mb-2"
@@ -50,7 +50,7 @@ export function Pricing() {
           </span>
           <h2
             data-block={SECTION_MAP.pricing.headings[1]}
-            className="text-2xl sm:text-3xl md:text-4xl font-semibold text-[var(--ink)] tracking-tight"
+            className="text-[28px] lg:text-[40px] font-semibold text-[var(--ink)] tracking-[-0.02em]"
           >
             {h352.text}
           </h2>
@@ -58,7 +58,7 @@ export function Pricing() {
 
         {/* Structured Pricing Card (CSS for JS + Apna College EMI pattern) */}
         {/* TODO: image-locked copy, awaiting client text */}
-        <div className="max-w-[780px] bg-[var(--surface)] border border-[var(--border)] rounded p-6 sm:p-8 md:p-10 shadow-sm mb-12">
+        <div className="w-full bg-[var(--surface)] border border-[var(--border)] rounded p-6 sm:p-8 md:p-10 shadow-sm mb-10 text-left">
           {/* Plan Identifier */}
           <div className="inline-block px-3 py-1 rounded bg-[var(--surface-2)] border border-[var(--border)] text-xs md:text-sm font-semibold text-[var(--ink)] tracking-wider mb-4">
             <span data-block={SECTION_MAP.pricing.planName}>
@@ -70,7 +70,7 @@ export function Pricing() {
           <div className="flex flex-col sm:flex-row sm:items-baseline gap-2 sm:gap-4 mb-6">
             <h3
               data-block={SECTION_MAP.pricing.priceTiers[0]}
-              className="text-xl sm:text-2xl font-semibold text-[var(--ink)]"
+              className="text-[20px] lg:text-[24px] font-semibold text-[var(--ink)] tracking-[-0.01em]"
             >
               {price1.text}
             </h3>
@@ -122,7 +122,7 @@ export function Pricing() {
         </div>
 
         {/* Structured Program Logistics (WHAT, WHEN, WHY) */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 max-w-[780px] mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 w-full mb-10 text-left">
           {/* WHAT Card */}
           <div className="p-5 rounded bg-[var(--surface)] border border-[var(--border)]">
             <h4
@@ -172,17 +172,17 @@ export function Pricing() {
           </div>
         </div>
 
-        {/* Closing Headings Affirmation */}
-        <div className="text-left max-w-[780px]">
+        {/* Closing Headings Affirmation: Centered */}
+        <div className="text-center w-full">
           <p
             data-block={SECTION_MAP.pricing.closingHeadings[0]}
-            className="text-base md:text-lg font-medium text-[var(--body)] mb-2"
+            className="text-base lg:text-[17px] font-medium text-[var(--body)] mb-2"
           >
             {closingH1.text}
           </p>
           <h3
             data-block={SECTION_MAP.pricing.closingHeadings[1]}
-            className="text-xl sm:text-2xl font-semibold text-[var(--ink)]"
+            className="text-[20px] lg:text-[24px] font-semibold text-[var(--ink)] tracking-[-0.01em]"
           >
             {closingH2.text}
           </h3>

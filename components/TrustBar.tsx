@@ -12,13 +12,13 @@ export function TrustBar() {
   const logoSrc = getLocalImagePath(logoImageBlock.src);
 
   return (
-    <section className="w-full bg-[var(--surface-2)] border-b border-[var(--border)] py-12 md:py-16">
+    <section className="w-full bg-[var(--surface-2)] py-12 md:py-16">
       <div className="max-w-[1120px] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Sub-band 1: Company Logos Placement Strip (Scaler pattern) */}
         <div className="text-left pb-10 border-b border-[var(--border)]">
           <h2
             data-block={SECTION_MAP.trustBar.logoStripHeading}
-            className="text-base md:text-lg font-medium text-[var(--ink)] mb-4"
+            className="text-base lg:text-[17px] font-medium text-[var(--ink)] mb-4"
           >
             {logoHeadingBlock.text}
           </h2>
@@ -46,7 +46,7 @@ export function TrustBar() {
         <div className="text-left pt-10">
           <h2
             data-block={SECTION_MAP.trustBar.communityHeading}
-            className="text-xl md:text-2xl font-semibold text-[var(--ink)] mb-6 leading-tight"
+            className="text-[28px] lg:text-[40px] font-semibold text-[var(--ink)] tracking-[-0.02em] mb-6 leading-tight"
           >
             {communityHeadingBlock.text}
           </h2>

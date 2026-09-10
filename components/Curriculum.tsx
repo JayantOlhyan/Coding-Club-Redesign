@@ -14,11 +14,11 @@ export function Curriculum() {
     <section
       id="curriculum"
       aria-label="Curriculum"
-      className="w-full bg-[var(--surface)] border-b border-[var(--border)] py-16 md:py-24"
+      className="w-full bg-[var(--surface-2)] py-16 md:py-24"
     >
-      <div className="max-w-[1120px] mx-auto px-4 sm:px-6 lg:px-8">
-        {/* 9-Module Accordion List (Joy of React + Crio module cards pattern) */}
-        <div className="space-y-4 max-w-[880px]">
+      <div className="max-w-[880px] mx-auto px-4 sm:px-6 lg:px-8">
+        {/* 9-Module Accordion Spine (v2.6 numbered spine) */}
+        <div className="space-y-4">
           {SECTION_MAP.curriculum.modules.map((m) => {
             const hNum = getBlock<HeadingBlock>(m.headings[0]);
             const hTitle = getBlock<HeadingBlock>(m.headings[1]);
@@ -28,28 +28,36 @@ export function Curriculum() {
             return (
               <details
                 key={m.number}
-                className="group border border-[var(--border)] rounded bg-[var(--surface-2)] overflow-hidden transition-colors"
+                className="group border border-[var(--border)] border-l-[3px] border-l-[var(--border)] group-open:border-l-[var(--accent)] rounded bg-[var(--surface)] overflow-hidden transition-colors"
               >
-                <summary className="flex items-start justify-between p-5 md:p-6 cursor-pointer list-none [&::-webkit-details-marker]:hidden select-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] gap-4">
-                  <div className="text-left">
-                    <span
-                      data-block={m.headings[0]}
-                      className="inline-block text-xs md:text-sm font-semibold text-[var(--body)] uppercase tracking-wider mb-1"
-                    >
-                      {hNum.text}
-                    </span>
-                    <h3
-                      data-block={m.headings[1]}
-                      className="text-lg sm:text-xl font-semibold text-[var(--ink)] leading-snug"
-                    >
-                      {hTitle.text}
-                    </h3>
-                    <p
-                      data-block={m.headings[2]}
-                      className="text-sm font-normal text-[var(--body)] mt-1"
-                    >
-                      {hSub.text}
-                    </p>
+                <summary className="flex items-start justify-between p-5 md:p-6 cursor-pointer list-none [&::-webkit-details-marker]:hidden select-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] gap-4 sm:gap-6">
+                  <div className="flex items-start gap-4 sm:gap-6 text-left">
+                    {/* Large numeral spine in its own left gutter */}
+                    <div
+                      className="curriculum-module-num flex items-center justify-center w-8 sm:w-10 shrink-0 pt-0.5"
+                      data-module={String(m.number).padStart(2, "0")}
+                      aria-hidden="true"
+                    />
+                    <div>
+                      <span
+                        data-block={m.headings[0]}
+                        className="inline-block text-xs md:text-sm font-semibold text-[var(--body)] uppercase tracking-wider mb-1"
+                      >
+                        {hNum.text}
+                      </span>
+                      <h3
+                        data-block={m.headings[1]}
+                        className="text-[20px] lg:text-[24px] font-semibold text-[var(--ink)] tracking-[-0.01em] leading-snug"
+                      >
+                        {hTitle.text}
+                      </h3>
+                      <p
+                        data-block={m.headings[2]}
+                        className="text-base lg:text-[17px] font-normal text-[var(--body)] mt-1"
+                      >
+                        {hSub.text}
+                      </p>
+                    </div>
                   </div>
                   <div className="pt-1 flex-shrink-0 text-[var(--body)] group-open:rotate-180 transition-transform duration-200">
                     <svg
@@ -72,7 +80,7 @@ export function Curriculum() {
                 <div className="px-5 md:px-6 pb-6 pt-3 border-t border-[var(--border)]">
                   <p
                     data-block={m.description}
-                    className="text-sm md:text-base text-[var(--body)] font-normal leading-[1.6] mb-5"
+                    className="text-base lg:text-[17px] text-[var(--body)] font-normal leading-[1.6] mb-5"
                   >
                     {desc.text}
                   </p>

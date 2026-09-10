@@ -34,9 +34,9 @@ export function BeforeAndAfter() {
     <section
       id="before-after"
       aria-label="Before and After"
-      className="w-full bg-[var(--surface)] border-b border-[var(--border)] py-16 md:py-24"
+      className="w-full bg-[var(--surface)] py-16 md:py-24"
     >
-      <div className="max-w-[1120px] mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-[1040px] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-left mb-12 max-w-[780px]">
           <span
@@ -47,7 +47,7 @@ export function BeforeAndAfter() {
           </span>
           <h2
             data-block={SECTION_MAP.beforeAndAfter.headings[1]}
-            className="text-2xl sm:text-3xl md:text-4xl font-semibold text-[var(--ink)] tracking-tight"
+            className="text-[28px] lg:text-[40px] font-semibold text-[var(--ink)] tracking-[-0.02em]"
           >
             {h338.text}
           </h2>
@@ -60,7 +60,7 @@ export function BeforeAndAfter() {
             <div>
               <h3
                 data-block={SECTION_MAP.beforeAndAfter.before.heading}
-                className="text-xl sm:text-2xl font-semibold text-[var(--ink)] mb-4"
+                className="text-[20px] lg:text-[24px] font-semibold text-[var(--ink)] tracking-[-0.01em] mb-4"
               >
                 {beforeHeading.text}
               </h3>
@@ -106,12 +106,12 @@ export function BeforeAndAfter() {
             </div>
           </div>
 
-          {/* AFTER Card */}
-          <div className="rounded bg-[var(--surface-2)] border border-[var(--border)] p-6 md:p-8 flex flex-col justify-between shadow-sm">
+          {/* AFTER Card: Visually opposed with --success accent */}
+          <div className="rounded bg-[var(--surface-2)] border border-[var(--border)] border-l-4 border-l-[var(--success)] p-6 md:p-8 flex flex-col justify-between shadow-sm">
             <div>
               <h3
                 data-block={SECTION_MAP.beforeAndAfter.after.heading}
-                className="text-xl sm:text-2xl font-semibold text-[var(--ink)] mb-4"
+                className="text-[20px] lg:text-[24px] font-semibold text-[var(--ink)] tracking-[-0.01em] mb-4"
               >
                 {afterHeading.text}
               </h3>

@@ -18,13 +18,13 @@ export function WhatToExpect() {
   const p57 = getBlock<ParagraphBlock>(SECTION_MAP.whatToExpect.scarcityText);
 
   return (
-    <section className="w-full bg-[var(--surface)] border-b border-[var(--border)] py-16 md:py-24">
-      <div className="max-w-[1120px] mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-[780px] text-left">
+    <section className="w-full bg-[var(--surface)] py-16 md:py-24">
+      <div className="max-w-[760px] mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="w-full text-left">
           {/* Section Heading */}
           <h2
             data-block={SECTION_MAP.whatToExpect.heading}
-            className="text-2xl sm:text-3xl md:text-4xl font-semibold text-[var(--ink)] tracking-tight mb-8"
+            className="text-[28px] lg:text-[40px] font-semibold text-[var(--ink)] tracking-[-0.02em] mb-8"
           >
             {h46.text}
           </h2>
@@ -43,7 +43,7 @@ export function WhatToExpect() {
           {/* Key Value Subheading */}
           <h3
             data-block={SECTION_MAP.whatToExpect.h1Features[1]}
-            className="text-xl sm:text-2xl font-semibold text-[var(--ink)] mb-8 leading-snug"
+            className="text-[20px] lg:text-[24px] font-semibold text-[var(--ink)] tracking-[-0.01em] mb-8 leading-snug"
           >
             {h50.text}
           </h3>
@@ -52,25 +52,25 @@ export function WhatToExpect() {
           <div className="p-6 md:p-8 rounded bg-[var(--surface-2)] border border-[var(--border)] mb-8">
             <p
               data-block={SECTION_MAP.whatToExpect.h1Features[2]}
-              className="text-base sm:text-lg font-medium text-[var(--ink)] mb-2"
+              className="text-base lg:text-[17px] font-medium text-[var(--ink)] mb-2"
             >
               {h51.text}
             </p>
             <h4
               data-block={SECTION_MAP.whatToExpect.h1Features[3]}
-              className="text-lg sm:text-xl md:text-2xl font-semibold text-[var(--ink)] mb-3 leading-tight"
+              className="text-[20px] lg:text-[24px] font-semibold text-[var(--ink)] tracking-[-0.01em] mb-3 leading-tight"
             >
               {h52.text}
             </h4>
             <p
               data-block={SECTION_MAP.whatToExpect.h1Features[4]}
-              className="text-base sm:text-lg font-medium text-[var(--ink)] mb-1"
+              className="text-base lg:text-[17px] font-medium text-[var(--ink)] mb-1"
             >
               {h53.text}
             </p>
             <p
               data-block={SECTION_MAP.whatToExpect.h1Features[5]}
-              className="text-base sm:text-lg font-normal text-[var(--body)]"
+              className="text-base lg:text-[17px] font-normal text-[var(--body)]"
             >
               {h54.text}
             </p>
@@ -80,7 +80,7 @@ export function WhatToExpect() {
           <div className="p-6 rounded border-l-4 border-[var(--accent)] bg-[var(--surface-2)] mb-8">
             <blockquote
               data-block={SECTION_MAP.whatToExpect.h1Features[6]}
-              className="text-base md:text-lg font-normal italic text-[var(--ink)] leading-[1.6]"
+              className="text-base lg:text-[17px] font-normal italic text-[var(--ink)] leading-[1.6]"
             >
               {h55.text}
             </blockquote>

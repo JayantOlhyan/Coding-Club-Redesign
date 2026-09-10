@@ -33,7 +33,7 @@ export function Mentors() {
     <section
       id="mentors"
       aria-label="Mentors"
-      className="w-full bg-[var(--surface)] border-b border-[var(--border)] py-16 md:py-24"
+      className="w-full bg-[var(--surface)] py-16 md:py-24"
     >
       <div className="max-w-[1120px] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
@@ -46,7 +46,7 @@ export function Mentors() {
           </span>
           <h2
             data-block={SECTION_MAP.mentors.headings[1]}
-            className="text-2xl sm:text-3xl md:text-4xl font-semibold text-[var(--ink)] tracking-tight"
+            className="text-[28px] lg:text-[40px] font-semibold text-[var(--ink)] tracking-[-0.02em]"
           >
             {h297.text}
           </h2>
@@ -93,13 +93,13 @@ export function Mentors() {
               </div>
               <h3
                 data-block={leadMentor.name}
-                className="text-2xl sm:text-3xl font-semibold text-[var(--ink)] tracking-tight mb-4"
+                className="text-[24px] lg:text-[32px] font-semibold text-[var(--ink)] tracking-[-0.02em] mb-4"
               >
                 {m1Name.text}
               </h3>
               <p
                 data-block={leadMentor.bio}
-                className="text-base md:text-lg font-normal text-[var(--body)] leading-[1.6]"
+                className="text-base lg:text-[17px] font-normal text-[var(--body)] leading-[1.6]"
               >
                 {m1Bio.text}
               </p>
@@ -155,7 +155,7 @@ export function Mentors() {
         <div className="text-left mb-8 pt-4 border-t border-[var(--border)]">
           <h3
             data-block={SECTION_MAP.mentors.taHeading}
-            className="text-xl sm:text-2xl font-semibold text-[var(--ink)] mb-6"
+            className="text-[20px] lg:text-[24px] font-semibold text-[var(--ink)] tracking-[-0.01em] mb-6"
           >
             {taHeading.text}
           </h3>

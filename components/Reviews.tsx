@@ -25,14 +25,14 @@ export function Reviews() {
     <section
       id="reviews"
       aria-label="Reviews"
-      className="w-full bg-[var(--surface-2)] border-b border-[var(--border)] py-16 md:py-24"
+      className="w-full bg-[var(--surface-2)] py-16 md:py-24"
     >
       <div className="max-w-[1120px] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Heading */}
         <div className="text-left mb-12 max-w-[780px]">
           <h2
             data-block={SECTION_MAP.reviews.heading}
-            className="text-2xl sm:text-3xl md:text-4xl font-semibold text-[var(--ink)] tracking-tight"
+            className="text-[28px] lg:text-[40px] font-semibold text-[var(--ink)] tracking-[-0.02em]"
           >
             {h327.text}
           </h2>

@@ -18,7 +18,7 @@ export function Outcomes() {
     <section
       id="outcomes"
       aria-label="Outcomes"
-      className="w-full bg-[var(--surface)] border-b border-[var(--border)] py-16 md:py-24"
+      className="w-full bg-[var(--surface)] py-16 md:py-24"
     >
       <div className="max-w-[1120px] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
@@ -31,7 +31,7 @@ export function Outcomes() {
           </span>
           <h2
             data-block={SECTION_MAP.outcomes.headings[1]}
-            className="text-2xl sm:text-3xl md:text-4xl font-semibold text-[var(--ink)] tracking-tight"
+            className="text-[28px] lg:text-[40px] font-semibold text-[var(--ink)] tracking-[-0.02em]"
           >
             {h318.text}
           </h2>
@@ -48,8 +48,17 @@ export function Outcomes() {
             return (
               <div
                 key={idx}
-                className="w-full rounded overflow-hidden border border-[var(--border)] bg-[var(--surface-2)] shadow-sm"
+                className="relative w-full rounded overflow-hidden border border-[var(--border)] bg-[var(--surface-2)] shadow-sm"
               >
+                {/* Placement indicator badge in --success */}
+                <div
+                  className="absolute top-2.5 right-2.5 w-6 h-6 rounded-full bg-[var(--success)] text-white flex items-center justify-center shadow z-10"
+                  aria-hidden="true"
+                >
+                  <svg className="w-3.5 h-3.5" viewBox="0 0 16 16" fill="currentColor">
+                    <path d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z" />
+                  </svg>
+                </div>
                 <img
                   src={src}
                   alt={item.alt || "Student placement success story"}

@@ -21,8 +21,8 @@ export function WhoThisIsFor() {
   const imgSrc = getLocalImagePath(imgBlock.src);
 
   return (
-    <section className="w-full bg-[var(--surface)] border-b border-[var(--border)] py-16 md:py-24">
-      <div className="max-w-[1120px] mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="w-full bg-[var(--surface)] py-16 md:py-24">
+      <div className="max-w-[1040px] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-left mb-12 max-w-[780px]">
           <span
@@ -33,13 +33,13 @@ export function WhoThisIsFor() {
           </span>
           <h2
             data-block={SECTION_MAP.whoThisIsFor.headings[1]}
-            className="text-2xl sm:text-3xl md:text-4xl font-semibold text-[var(--ink)] tracking-tight mb-4"
+            className="text-[28px] lg:text-[40px] font-semibold text-[var(--ink)] tracking-[-0.02em] mb-4"
           >
             {h18.text}
           </h2>
           <p
             data-block={SECTION_MAP.whoThisIsFor.headings[2]}
-            className="text-base md:text-lg font-normal text-[var(--body)] leading-[1.6]"
+            className="text-base lg:text-[17px] font-normal text-[var(--body)] leading-[1.6]"
           >
             {h19.text}
           </p>
@@ -67,7 +67,7 @@ export function WhoThisIsFor() {
                     </span>
                     <p
                       data-block={blockIdx}
-                      className="text-base md:text-[17px] font-normal text-[var(--body)] leading-[1.6]"
+                      className="text-base lg:text-[17px] font-normal text-[var(--body)] leading-[1.6]"
                     >
                       {item.text}
                     </p>
@@ -97,7 +97,7 @@ export function WhoThisIsFor() {
         <div className="mt-12 p-6 md:p-8 rounded bg-[var(--surface-2)] border border-[var(--border)] text-left">
           <p
             data-block={SECTION_MAP.whoThisIsFor.closingText}
-            className="text-base md:text-[17px] font-normal text-[var(--ink)] leading-[1.6]"
+            className="text-base lg:text-[17px] font-normal text-[var(--ink)] leading-[1.6]"
           >
             {closingBlock.text}
           </p>

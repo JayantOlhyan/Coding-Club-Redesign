@@ -12,10 +12,11 @@ import { BeforeAndAfter } from "@/components/BeforeAndAfter";
 import { Pricing } from "@/components/Pricing";
 import { Faq } from "@/components/Faq";
 import { FinalCtaAndFooter } from "@/components/FinalCtaAndFooter";
+import { StickyMobileCta } from "@/components/StickyMobileCta";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[var(--surface)]">
+    <main className="min-h-screen bg-[var(--surface)] pb-20 md:pb-0">
       {/* Section 1: Hero */}
       <Hero />
 
@@ -69,6 +70,9 @@ export default function Home() {
 
       {/* Section 13: Final CTA + Form + Footer (Blocks 11-13, 384-389) */}
       <FinalCtaAndFooter />
+
+      {/* Persistent Mobile Sticky CTA (Hidden at md+) */}
+      <StickyMobileCta />
     </main>
   );
 }
