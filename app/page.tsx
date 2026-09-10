@@ -11,6 +11,7 @@ import { Reviews } from "@/components/Reviews";
 import { BeforeAndAfter } from "@/components/BeforeAndAfter";
 import { Pricing } from "@/components/Pricing";
 import { Faq } from "@/components/Faq";
+import { FinalCtaAndFooter } from "@/components/FinalCtaAndFooter";
 
 export default function Home() {
   return (
@@ -66,8 +67,8 @@ export default function Home() {
       {/* Section 12: FAQ (Blocks 367-383) */}
       <Faq />
 
-      {/* Target anchor for Hero CTA scroll */}
-      <div id="lead-form" className="sr-only" aria-hidden="true" />
+      {/* Section 13: Final CTA + Form + Footer (Blocks 11-13, 384-389) */}
+      <FinalCtaAndFooter />
     </main>
   );
 }
