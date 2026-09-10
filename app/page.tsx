@@ -7,6 +7,7 @@ import { WhatToExpect } from "@/components/WhatToExpect";
 import { Curriculum } from "@/components/Curriculum";
 import { Mentors } from "@/components/Mentors";
 import { Outcomes } from "@/components/Outcomes";
+import { Reviews } from "@/components/Reviews";
 
 export default function Home() {
   return (
@@ -49,6 +50,9 @@ export default function Home() {
 
       {/* Section 8: Outcomes (Blocks 317-326) */}
       <Outcomes />
+
+      {/* Section 9: Reviews (Blocks 327-336) */}
+      <Reviews />
 
       {/* Target anchor for Hero CTA scroll */}
       <div id="lead-form" className="sr-only" aria-hidden="true" />
