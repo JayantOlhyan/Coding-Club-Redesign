@@ -162,7 +162,21 @@ async function runTests() {
 
   for (const width of viewports) {
     await page.setViewport({ width, height: 900 });
-    await new Promise((r) => setTimeout(r, 300));
+    // Trigger lazy images and ensure all images are fully loaded before screenshotting
+    await page.evaluate(async () => {
+      const images = Array.from(document.querySelectorAll("img"));
+      await Promise.all(
+        images.map((img) => {
+          if (img.complete && img.naturalWidth > 0) return Promise.resolve();
+          return new Promise<void>((resolve) => {
+            img.onload = () => resolve();
+            img.onerror = () => resolve();
+            img.loading = "eager";
+          });
+        })
+      );
+    });
+    await new Promise((r) => setTimeout(r, 500));
 
     const scrollMetrics = await page.evaluate(() => {
       const scrollWidth = document.documentElement.scrollWidth;
