@@ -1,6 +1,7 @@
 import { Hero } from "@/components/Hero";
 import { TrustBar } from "@/components/TrustBar";
 import { WhoThisIsFor } from "@/components/WhoThisIsFor";
+import { CtaBandA } from "@/components/CtaBand";
 
 export default function Home() {
   return (
@@ -13,6 +14,9 @@ export default function Home() {
 
       {/* Section 3: Who this is for */}
       <WhoThisIsFor />
+
+      {/* CTA Band Instance A (Blocks 28-30) */}
+      <CtaBandA />
 
       {/* Target anchor for Hero CTA scroll */}
       <div id="lead-form" className="sr-only" aria-hidden="true" />
