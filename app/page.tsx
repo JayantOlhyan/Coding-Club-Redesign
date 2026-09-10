@@ -2,6 +2,7 @@ import { Hero } from "@/components/Hero";
 import { TrustBar } from "@/components/TrustBar";
 import { WhoThisIsFor } from "@/components/WhoThisIsFor";
 import { CtaBandA } from "@/components/CtaBand";
+import { Benefits } from "@/components/Benefits";
 
 export default function Home() {
   return (
@@ -17,6 +18,9 @@ export default function Home() {
 
       {/* CTA Band Instance A (Blocks 28-30) */}
       <CtaBandA />
+
+      {/* Section 4: Why join / Benefits (Blocks 31-36) */}
+      <Benefits />
 
       {/* Target anchor for Hero CTA scroll */}
       <div id="lead-form" className="sr-only" aria-hidden="true" />
