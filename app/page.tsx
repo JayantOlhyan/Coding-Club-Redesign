@@ -3,6 +3,7 @@ import { TrustBar } from "@/components/TrustBar";
 import { WhoThisIsFor } from "@/components/WhoThisIsFor";
 import { CtaBandA, CtaBandB } from "@/components/CtaBand";
 import { Benefits } from "@/components/Benefits";
+import { WhatToExpect } from "@/components/WhatToExpect";
 
 export default function Home() {
   return (
@@ -24,6 +25,9 @@ export default function Home() {
 
       {/* CTA Band Instance B (Blocks 42-45) */}
       <CtaBandB />
+
+      {/* Section 5: What to expect (Blocks 46, 49-57) */}
+      <WhatToExpect />
 
       {/* Target anchor for Hero CTA scroll */}
       <div id="lead-form" className="sr-only" aria-hidden="true" />
