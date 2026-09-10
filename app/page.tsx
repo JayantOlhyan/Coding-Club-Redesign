@@ -10,6 +10,7 @@ import { Outcomes } from "@/components/Outcomes";
 import { Reviews } from "@/components/Reviews";
 import { BeforeAndAfter } from "@/components/BeforeAndAfter";
 import { Pricing } from "@/components/Pricing";
+import { Faq } from "@/components/Faq";
 
 export default function Home() {
   return (
@@ -61,6 +62,9 @@ export default function Home() {
 
       {/* Section 11: Pricing (Blocks 2, 351-366) */}
       <Pricing />
+
+      {/* Section 12: FAQ (Blocks 367-383) */}
+      <Faq />
 
       {/* Target anchor for Hero CTA scroll */}
       <div id="lead-form" className="sr-only" aria-hidden="true" />
