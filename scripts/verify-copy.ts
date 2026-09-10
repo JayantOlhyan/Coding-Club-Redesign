@@ -118,9 +118,12 @@ async function runBrowserVerification(): Promise<{
       })()
     `) as { indices: number[]; textContent: string }[];
 
+    const seenIndices = new Set<number>();
     const blockAssertions: BlockAssertion[] = [];
     for (const item of domResults) {
       for (const idx of item.indices) {
+        if (seenIndices.has(idx)) continue;
+        seenIndices.add(idx);
         const expectedBlock = blocks[idx];
         const expectedText = getExpectedTextForBlock(expectedBlock);
         blockAssertions.push({

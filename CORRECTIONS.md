@@ -38,6 +38,15 @@ Per the governing client decision, the following 7 blocks from `content.json` ar
 | **141** | `image` | `https://i.imgur.com/A8rtTVc.jpg` | **Duplicate instructor headshot.** Repeated Rishabh Jain photo placed after Module 4; deduplicated per PRD §7 & §11. |
 | **243** | `image` | `https://i.imgur.com/Vhbv4ng.jpg` | **Duplicate instructor headshot.** Repeated Rishabh Jain photo placed after Module 8; deduplicated per PRD §7 & §11. |
 
+### 2.1 Conditional Drops (Countdown-Dependent)
+
+The following 2 blocks are conditionally suppressed from the DOM when `COHORT.showCountdown: false` to prevent dangling labels:
+
+| Block Index | Original Type | Content | Reason for Conditional Drop |
+|---|---|---|---|
+| **5** | `announcement` | `"Limited Seats. Registration Closing In"` | Orphaned sentence fragment if no countdown timer follows. Rendered verbatim when countdown is active (`showCountdown: true`). |
+| **56** | `heading` (h3) | `"Registration Closing In:"` | Dangling countdown label with no timer following. Rendered verbatim when countdown is active (`showCountdown: true`). |
+
 ---
 
 ## 3. Structural & Functional Adaptations

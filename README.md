@@ -4,25 +4,118 @@ This repository contains the static Next.js redesign prototype for `codingclub.t
 
 ---
 
-## 1. Project Summary & Parity Guarantee
+## 1. Quick Start (Install, Dev & Static Export)
 
-- **Framework**: Next.js 15 (App Router) configured for 100% static HTML export (`output: 'export'`).
-- **Source of Truth**: `content.json` (390 extracted content blocks from the original production site).
-- **Parity Guarantee**:
-  - **100% Bijection**: Every one of the 390 blocks is accounted for — 383 active in the DOM tree across 13 sections, and exactly 7 documented drops (PRD Rule 5 and mobile duplicates, documented in `CORRECTIONS.md`).
-  - **100% Copy Fidelity**: Zero copy invented, modified, or omitted. All copy is loaded via type-safe accessors in `lib/content.ts` from `content.json`.
-  - **Zero Hardcoded Copy**: Grep assertions enforce zero string literals in UI component code.
-  - **Zero Un-attributed DOM Leaks**: Puppeteer TreeWalker audits every text node in the document body. Only client-authorized dynamic text (`COHORT.batchDate` and `COHORT.label`) is permitted outside `[data-block]` elements.
+### Prerequisites
+- Node.js 18.x or 20.x+
+- npm
+
+### Installation
+```bash
+npm install
+```
+
+### Local Development Server
+```bash
+npm run dev
+# Starts local development server at http://localhost:3000
+```
+
+### Static HTML Production Export
+```bash
+npm run build
+# Compiles Next.js and outputs standalone static HTML bundle to out/
+```
+
+To preview the production static export locally:
+```bash
+npx serve out -l 3000
+```
 
 ---
 
-## 2. Technical Architecture & Design System
+## 2. Parity Guarantee & Content Architecture
+
+- **Single Source of Truth**: `content.json` (390 extracted blocks from live site).
+- **100% Bijection**: Every block is accounted for — 383 active in `SECTION_MAP`, exactly 7 documented drops (`CORRECTIONS.md`).
+- **100% Copy Fidelity**: All copy loaded via `lib/content.ts` from `content.json`. Zero hardcoded string literals in `.tsx` components.
+- **Zero DOM Leaks**: Monitored by a Puppeteer TreeWalker audit ensuring zero un-attributed text nodes in the DOM body.
+
+---
+
+## 3. How to Edit Content via `content.json`
+
+To update headlines, bullet points, bios, or FAQs:
+1. Open `content.json`.
+2. Locate the corresponding block by index or search for the text.
+3. Edit the `text` field directly.
+4. Run `npm run build` to re-export the static site.
+5. Run `npx tsx scripts/verify-copy.ts` to confirm exact string equality and check for unintended regressions.
+
+---
+
+## 4. How to Re-run the Extractor to Re-sync with Live Site
+
+If copy changes are made to the legacy production website at `https://codingclub.tech/`:
+1. Re-run the Python extraction script:
+   ```bash
+   python3 scripts/extract_content.py
+   ```
+2. Update `content.json` with newly extracted blocks.
+3. Run the parity verifier:
+   ```bash
+   npx tsx scripts/verify-parity.ts
+   ```
+4. Re-run image migration if new images were added:
+   ```bash
+   npx tsx scripts/fetch-images.ts
+   ```
+
+---
+
+## 5. How to Toggle Cohort Date and Countdown
+
+Cohort scheduling and urgency banners are configured in [`lib/cohort.ts`](./lib/cohort.ts):
+
+```ts
+export const COHORT = {
+  startDate: "2026-10-06",        // Real batch start date (YYYY-MM-DD)
+  showCountdown: false,          // Toggle: false = static date, true = live countdown
+  batchLabelPrefix: "Next batch starts",
+  countdownLabel: "Batch starts in",
+};
+```
+
+- **When `showCountdown: false` (Default)**: The announcement pill and Section 5 display the real batch date cleanly without false countdowns. Blocks 5 and 56 are conditionally omitted to prevent dangling labels.
+- **When `showCountdown: true`**: Blocks 5 and 56 render verbatim, followed by an active JavaScript countdown clock calculating days, hours, minutes, and seconds to `COHORT.startDate`.
+- **Build-Time Assertion**: The build fails immediately if `COHORT.startDate` is set in the past relative to the build date.
+
+---
+
+## 6. Verification Suite
+
+Run all quality and parity verification gates:
+
+```bash
+# 1. Verify 1-to-1 Bijection and Image Manifest
+npx tsx scripts/verify-parity.ts
+
+# 2. Verify Exact Copy Fidelity and Inverse DOM TreeWalker Leaks
+npx tsx scripts/verify-copy.ts
+
+# 3. Verify Responsive Viewports, Interactivity, Forms, and Accordions
+npx tsx scripts/test-phase4.ts
+```
+
+---
+
+## 7. Technical Architecture & Design System
 
 ### Typography
-Self-hosted WOFF2 fonts from Fontshare (Indian Type Foundry) via `@font-face` in `app/globals.css`:
+Self-hosted WOFF2 fonts via `@font-face` in `app/globals.css`:
 - **Headings**: Clash Grotesk (weights 500 and 600 only).
-- **Body**: Satoshi (weights 400 and 700 only). Satoshi 500 is strictly excluded per spec.
-- Type scale: `h1` (32px mobile / 48px desktop), `h2` (24px / 32px), `h3` (20px / 24px), `body` (16px / 17px, line-height 1.6, max width 68ch).
+- **Body**: Satoshi (weights 400 and 700 only; 500 strictly excluded).
+- Scale: `h1` (32px mobile / 48px desktop), `h2` (24px / 32px), `h3` (20px / 24px), `body` (16px / 17px, line-height 1.6, max width 68ch).
 
 ### Color & Elevation Tokens
 - `--ink: #16181D` (headings)
@@ -34,65 +127,46 @@ Self-hosted WOFF2 fonts from Fontshare (Indian Type Foundry) via `@font-face` in
 - `--success: #0E7C5A` (outcome/placement badges)
 - `--border: #E4E2DD` (card borders and dividers)
 
-### Section Architecture (13 Sections)
-1. **Section 1 — Hero**: Main headline (`Block 6`, single responsive `<h1>`), subhead (`Block 8`), dynamic cohort date (`COHORT`), primary CTA (`Block 14`).
-2. **Section 2 — Trust Bar**: Student count (`Block 4`), mentor credentials (`Blocks 9, 10`), company placement proof (`Blocks 0, 1`), community metrics (`Blocks 37–41`).
-3. **Section 3 — Who This Is For**: 6 target audience personas (`Blocks 17–27`) in a 2-col responsive grid.
-4. **CtaBand A**: Mid-page CTA (`Blocks 28–30`).
-5. **Section 4 — Why Join / Benefits**: 4 core curriculum advantages (`Blocks 31–36`).
-6. **CtaBand B**: Urgency band (`Blocks 42–45`).
-7. **Section 5 — What to Expect**: Step-by-step masterclass expectations (`Blocks 46, 49–57`).
-8. **CtaBand C**: Action prompt (`Block 59`).
-9. **Section 6 — Curriculum**: 9 modules (`Blocks 60–74, 83–140, 142–164, 165–291, 82`), 186 bullets, all collapsed by default via native `<details>`/`<summary>`.
-10. **CtaBand D**: Scarcity CTA (`Blocks 292–295`).
-11. **Section 7 — Mentors**: 6 industry mentors & TAs (`Blocks 75–81, 296–313`) with bios and credentials.
-12. **CtaBand E**: Final push CTA (`Blocks 314–316`).
-13. **Section 8 — Outcomes**: Alumni placement proofs (`Blocks 317–326`).
-14. **Section 9 — Reviews**: 9 Vimeo video click-to-play facades (`Blocks 327–336`) with zero initial third-party scripts.
-15. **Section 10 — Before & After**: 2-column comparative transformation grid (`Blocks 337–350`).
-16. **Section 11 — Pricing**: Plan details (`Blocks 2, 351–366`) with full semantic HTML card structure and image-locked WebP fallback.
-17. **Section 12 — FAQ**: 8 accordion questions and answers (`Blocks 367–383`), native `<details>`, all collapsed by default.
-18. **Section 13 — Final CTA + Form + Footer**: Lead capture form (`Blocks 11, 12, 13`), WhatsApp direct line (`Block 389`), and legal links (`Blocks 385–388`).
+### 13-Section Layout Structure
+1. Hero (`Block 6`, single `<h1>`, dynamic cohort date)
+2. Trust Bar (Student count, mentor credentials, company logo strip, community metrics)
+3. Who This Is For (6 persona cards in 2-col responsive grid)
+4. CtaBand A (`Blocks 28–30`)
+5. Why Join / Benefits (4 core advantages)
+6. CtaBand B (`Blocks 42–45`)
+7. What to Expect (Masterclass value proposition)
+8. CtaBand C (`Block 59`)
+9. Curriculum (9 modules, 186 bullets, native `<details>` accordions)
+10. CtaBand D (`Blocks 292–295`)
+11. Mentors (6 mentors & TAs, deduplicated bios)
+12. CtaBand E (`Blocks 314–316`)
+13. Outcomes (Alumni placement proofs)
+14. Reviews (9 Vimeo click-to-play facades)
+15. Before & After (2-col comparative transformation grid)
+16. Pricing (Semantic HTML card + WebP fallback)
+17. FAQ (8 native `<details>` items, collapsed by default)
+18. Final CTA + Form + Footer (Lead form with validation, WhatsApp link, legal links)
 
 ---
 
-## 3. Performance & Audit Scores
+## 8. Measured Performance & Audit Scores
 
-- **Lighthouse Mobile Performance**: **100 / 100**
-- **Lighthouse Mobile Accessibility**: **100 / 100**
-- **First Contentful Paint (FCP)**: **1.5s**
-- **Largest Contentful Paint (LCP)**: **1.5s**
-- **Cumulative Layout Shift (CLS)**: **0.000**
-- **Total Blocking Time (TBT)**: **10ms**
-- **HTML Wire Transfer (gzip)**: **34.9 KB** (budget: < 60 KB)
-- **Zero Remote Runtime Requests**: All images converted to WebP locally (`public/images/`), zero calls to imgur or `rvs-pricing-card`.
-
----
-
-## 4. Verification Suite
-
-Run all quality and parity verification gates with:
-
-```bash
-# 1. Verify 1-to-1 Bijection and Image Manifest
-npx tsx scripts/verify-parity.ts
-
-# 2. Verify Exact Copy Fidelity and Inverse DOM TreeWalker Leaks
-npx tsx scripts/verify-copy.ts
-
-# 3. Verify Responsive Viewports, Interactivity, Forms, and Accordions
-npx tsx scripts/test-phase4.ts
-
-# 4. Build Static HTML Production Export
-npm run build
-```
+| Category | Live Site (`https://codingclub.tech/`) | Prototype (`out/`) |
+|---|:---:|:---:|
+| **Performance** | 56 | **99** |
+| **Accessibility** | 74 | **100** |
+| **Best Practices** | 69 | **96** |
+| **SEO** | 92 | **100** |
+| **First Contentful Paint (FCP)** | 3.6 s | **1.5 s** |
+| **Largest Contentful Paint (LCP)** | 8.8 s | **1.5 s** |
+| **Cumulative Layout Shift (CLS)** | 0.107 | **0.000** |
+| **Total Blocking Time (TBT)** | 320 ms | **10 ms** |
 
 ---
 
-## 5. Client Documentation
+## 9. Client Documentation & Deployment
 
-See [`CORRECTIONS.md`](./CORRECTIONS.md) for:
-- Complete table of source copy typos preserved verbatim.
-- Detailed accounting and rationale for all 7 documented block drops.
-- CCPA Dark Pattern compliance review on scarcity and countdown timer claims.
-- Trademark and third-party placement proof advisory notes.
+- [`DECISIONS.md`](./DECISIONS.md) — Plain-language client review package (Part A: Changes & Rationale, Part B: Image-locked Assets Needed, Part C: Strategic Decisions).
+- [`CORRECTIONS.md`](./CORRECTIONS.md) — Engineering log of preserved typos, structural adaptations, and regulatory review.
+- [`DEPLOY.md`](./DEPLOY.md) — Production hosting targets (Cloudflare Pages/Netlify), DNS configuration, and lead form backend wiring.
+- [`IMAGE-LEDGER.md`](./IMAGE-LEDGER.md) — Complete 36-image migration ledger.

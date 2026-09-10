@@ -66,6 +66,7 @@ export function BeforeAndAfter() {
               </h3>
 
               <div className="w-full rounded overflow-hidden border border-[var(--border)] bg-[var(--surface)] mb-6">
+                {/* TODO: image-locked copy, awaiting client text */}
                 <img
                   src={beforeImageSrc}
                   alt={beforeImage.alt || beforeHeading.text}
