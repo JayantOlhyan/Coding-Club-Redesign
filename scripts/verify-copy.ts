@@ -78,15 +78,11 @@ interface UntrackedTextNode {
   allowed: boolean;
 }
 
-function getExpectedTextForBlock(block: any, idx: number): string {
+function getExpectedTextForBlock(block: any): string {
   if (!block || !("text" in block)) return "";
-  let text = block.text;
-  // Block 5: Per Phase 0 and Phase 2 ruling, orphaned countdown label is suppressed when countdown is disabled
-  if (idx === 5 && !COHORT.showCountdown) {
-    text = text.replace(/\s*Registration Closing In\s*$/i, "");
-  }
-  return text;
+  return block.text;
 }
+
 
 async function runBrowserVerification(): Promise<{
   blockAssertions: BlockAssertion[];
@@ -126,7 +122,7 @@ async function runBrowserVerification(): Promise<{
     for (const item of domResults) {
       for (const idx of item.indices) {
         const expectedBlock = blocks[idx];
-        const expectedText = getExpectedTextForBlock(expectedBlock, idx);
+        const expectedText = getExpectedTextForBlock(expectedBlock);
         blockAssertions.push({
           index: idx,
           expected: expectedText,

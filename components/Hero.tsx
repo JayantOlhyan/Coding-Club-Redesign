@@ -15,11 +15,6 @@ export function Hero() {
   const logoMeta = getImageMeta(logoBlock.src);
   const logoSrc = getLocalImagePath(logoBlock.src);
 
-  // Per Phase 0 ruling: suppress orphaned countdown label when countdown is disabled
-  const urgencyHeaderText = COHORT.showCountdown
-    ? urgencyHeaderBlock.text
-    : urgencyHeaderBlock.text.replace(/\s*Registration Closing In\s*$/i, "");
-
   return (
     <header className="w-full bg-[var(--surface)] border-b border-[var(--border)]">
       {/* Top Brand & Announcement Bar */}
@@ -37,10 +32,12 @@ export function Hero() {
               className="w-[110px] md:w-[130px] h-auto"
             />
           </div>
-          <div className="inline-flex items-center gap-2 self-start sm:self-auto py-1.5 px-3 rounded bg-[var(--surface-2)] border border-[var(--border)] text-xs md:text-sm text-[var(--body)] font-normal">
-            <span className="inline-block w-2 h-2 rounded-full bg-[var(--accent)]" aria-hidden="true" />
-            <span data-block={SECTION_MAP.hero.urgencyHeader}>{urgencyHeaderText}</span>
-          </div>
+          {COHORT.showCountdown && (
+            <div className="inline-flex items-center gap-2 self-start sm:self-auto py-1.5 px-3 rounded bg-[var(--surface-2)] border border-[var(--border)] text-xs md:text-sm text-[var(--body)] font-normal">
+              <span className="inline-block w-2 h-2 rounded-full bg-[var(--accent)]" aria-hidden="true" />
+              <span data-block={SECTION_MAP.hero.urgencyHeader}>{urgencyHeaderBlock.text}</span>
+            </div>
+          )}
         </div>
       </div>
 
