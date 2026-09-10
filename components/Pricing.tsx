@@ -59,7 +59,7 @@ export function Pricing() {
         {/* Structured Pricing Card (CSS for JS + Apna College EMI pattern) */}
         <div className="max-w-[780px] bg-[var(--surface)] border border-[var(--border)] rounded p-6 sm:p-8 md:p-10 shadow-sm mb-12">
           {/* Plan Identifier */}
-          <div className="inline-block px-3 py-1 rounded bg-[var(--surface-2)] border border-[var(--border)] text-xs md:text-sm font-semibold text-[var(--accent)] tracking-wider mb-4">
+          <div className="inline-block px-3 py-1 rounded bg-[var(--surface-2)] border border-[var(--border)] text-xs md:text-sm font-semibold text-[var(--ink)] tracking-wider mb-4">
             <span data-block={SECTION_MAP.pricing.planName}>
               {planName.text}
             </span>

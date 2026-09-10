@@ -86,7 +86,7 @@ export function Mentors() {
               <div className="flex flex-wrap items-center gap-3 mb-3">
                 <span
                   data-block={SECTION_MAP.mentors.leadBadge}
-                  className="inline-flex items-center px-2.5 py-1 rounded text-xs font-semibold uppercase tracking-wider bg-[var(--surface)] border border-[var(--border)] text-[var(--accent)]"
+                  className="inline-flex items-center px-2.5 py-1 rounded text-xs font-semibold uppercase tracking-wider bg-[var(--surface-2)] border border-[var(--border)] text-[var(--ink)]"
                 >
                   {leadBadge.text}
                 </span>

@@ -34,7 +34,7 @@ export function Curriculum() {
                   <div className="text-left">
                     <span
                       data-block={m.headings[0]}
-                      className="inline-block text-xs md:text-sm font-semibold text-[var(--accent)] uppercase tracking-wider mb-1"
+                      className="inline-block text-xs md:text-sm font-semibold text-[var(--body)] uppercase tracking-wider mb-1"
                     >
                       {hNum.text}
                     </span>

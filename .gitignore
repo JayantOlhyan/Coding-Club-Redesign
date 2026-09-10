@@ -36,3 +36,4 @@ next-env.d.ts
 all_blocks.txt
 block_analysis.txt
 full_content_blocks.txt
+lh-report.json
