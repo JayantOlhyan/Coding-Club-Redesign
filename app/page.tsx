@@ -1,7 +1,7 @@
 import { Hero } from "@/components/Hero";
 import { TrustBar } from "@/components/TrustBar";
 import { WhoThisIsFor } from "@/components/WhoThisIsFor";
-import { CtaBandA, CtaBandB, CtaBandC, CtaBandD } from "@/components/CtaBand";
+import { CtaBandA, CtaBandB, CtaBandC, CtaBandD, CtaBandE } from "@/components/CtaBand";
 import { Benefits } from "@/components/Benefits";
 import { WhatToExpect } from "@/components/WhatToExpect";
 import { Curriculum } from "@/components/Curriculum";
@@ -42,6 +42,9 @@ export default function Home() {
 
       {/* Section 7: Mentors (Blocks 75-81, 296-313) */}
       <Mentors />
+
+      {/* CTA Band Instance E (Blocks 314-316) */}
+      <CtaBandE />
 
       {/* Target anchor for Hero CTA scroll */}
       <div id="lead-form" className="sr-only" aria-hidden="true" />
