@@ -1,5 +1,6 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import { getBlock, getImageMeta, getLocalImagePath, SECTION_MAP, HeadingBlock, ImageBlock, CtaBlock } from "@/lib/content";
 import { CohortDate } from "./CohortDate";
 import { COHORT } from "@/lib/cohort";
@@ -8,6 +9,8 @@ import { ScrollReveal } from "./motion/ScrollReveal";
 import { ParallaxLayer } from "./motion/ParallaxLayer";
 
 export function Hero() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
   const logoBlock = getBlock<ImageBlock>(SECTION_MAP.hero.logo);
   const urgencyHeaderBlock = getBlock<HeadingBlock>(SECTION_MAP.hero.urgencyHeader);
   const h1Block = getBlock<HeadingBlock>(SECTION_MAP.hero.h1);
@@ -20,6 +23,15 @@ export function Hero() {
   const logoMeta = getImageMeta(logoBlock.src);
   const logoSrc = getLocalImagePath(logoBlock.src);
 
+  // Close mobile menu on Escape key press
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setMobileMenuOpen(false);
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, []);
+
   return (
     <header className="relative w-full bg-white bg-tech-grid overflow-hidden border-b border-slate-200/80">
       <ScrollProgress />
@@ -30,7 +42,7 @@ export function Hero() {
       {/* Floating Glass Navigation & Announcement Bar */}
       <div className="sticky top-0 z-40 w-full bg-white/85 backdrop-blur-md border-b border-slate-200/80 shadow-xs">
         <div className="max-w-[1120px] mx-auto px-4 sm:px-6 lg:px-8 py-2.5">
-          <div className="flex items-center justify-between gap-4">
+          <div className="flex items-center justify-between gap-3">
             {/* Logo */}
             <a href="#" className="flex items-center gap-2 group">
               <img
@@ -45,7 +57,7 @@ export function Hero() {
               />
             </a>
 
-            {/* Premium Floating Glass Pill Navigation Bar */}
+            {/* Premium Floating Glass Pill Navigation Bar (Desktop) */}
             <nav className="hidden md:flex items-center p-1 rounded-full bg-slate-100/90 border border-slate-200/80 backdrop-blur-sm shadow-inner gap-1">
               <a
                 href="#who-this-is-for"
@@ -80,7 +92,7 @@ export function Hero() {
             </nav>
 
             {/* Right side CTA / Countdown badge */}
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-2.5">
               {COHORT.showCountdown && (
                 <div className="hidden sm:inline-flex items-center gap-2 py-1.5 px-3 rounded-full bg-slate-100 border border-slate-200 text-xs text-slate-700 font-medium">
                   <span className="inline-block w-2 h-2 rounded-full bg-blue-600 animate-pulse" aria-hidden="true" />
@@ -89,12 +101,72 @@ export function Hero() {
               )}
               <a
                 href="#lead-form"
-                className="inline-flex items-center justify-center px-4 py-2 rounded-lg bg-blue-600 hover:bg-blue-700 text-white font-semibold text-xs sm:text-sm transition-all shadow-sm hover:shadow-md hover:shadow-blue-500/20 active:scale-95"
+                className="inline-flex items-center justify-center px-3.5 sm:px-4 py-2 min-h-[44px] rounded-lg bg-blue-600 hover:bg-blue-700 text-white font-semibold text-xs sm:text-sm transition-all shadow-sm hover:shadow-md hover:shadow-blue-500/20 active:scale-95"
               >
                 Join Now →
               </a>
+
+              {/* Mobile Menu Hamburger Toggle (44x44px min touch target) */}
+              <button
+                type="button"
+                onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                aria-label="Toggle navigation menu"
+                aria-expanded={mobileMenuOpen}
+                className="md:hidden flex items-center justify-center w-11 h-11 rounded-lg border border-slate-200 bg-white text-slate-700 hover:bg-slate-50 transition-colors cursor-pointer shrink-0"
+              >
+                <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  {mobileMenuOpen ? (
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                  ) : (
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                  )}
+                </svg>
+              </button>
             </div>
           </div>
+
+          {/* Mobile Navigation Drawer */}
+          {mobileMenuOpen && (
+            <div className="md:hidden pt-3 pb-2 border-t border-slate-200/80 mt-2.5 animate-fadeIn">
+              <nav className="flex flex-col gap-1.5">
+                <a
+                  href="#who-this-is-for"
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="px-4 py-2.5 rounded-lg text-sm font-semibold text-slate-800 hover:bg-slate-100 active:bg-blue-50 active:text-blue-600 transition-colors"
+                >
+                  About
+                </a>
+                <a
+                  href="#curriculum"
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="px-4 py-2.5 rounded-lg text-sm font-semibold text-slate-800 hover:bg-slate-100 active:bg-blue-50 active:text-blue-600 transition-colors"
+                >
+                  Curriculum
+                </a>
+                <a
+                  href="#mentors"
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="px-4 py-2.5 rounded-lg text-sm font-semibold text-slate-800 hover:bg-slate-100 active:bg-blue-50 active:text-blue-600 transition-colors"
+                >
+                  Mentors
+                </a>
+                <a
+                  href="#reviews"
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="px-4 py-2.5 rounded-lg text-sm font-semibold text-slate-800 hover:bg-slate-100 active:bg-blue-50 active:text-blue-600 transition-colors"
+                >
+                  Reviews
+                </a>
+                <a
+                  href="#faq"
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="px-4 py-2.5 rounded-lg text-sm font-semibold text-slate-800 hover:bg-slate-100 active:bg-blue-50 active:text-blue-600 transition-colors"
+                >
+                  FAQs
+                </a>
+              </nav>
+            </div>
+          )}
         </div>
       </div>
 
