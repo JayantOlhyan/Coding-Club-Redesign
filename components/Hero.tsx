@@ -28,8 +28,8 @@ export function Hero() {
       <div className="absolute top-[-100px] left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-gradient-to-b from-blue-400/10 via-indigo-300/5 to-transparent blur-3xl pointer-events-none" />
 
       {/* Floating Glass Navigation & Announcement Bar */}
-      <div className="sticky top-0 z-40 w-full bg-white/80 backdrop-blur-md border-b border-slate-200/80 shadow-xs">
-        <div className="max-w-[1120px] mx-auto px-4 sm:px-6 lg:px-8 py-3">
+      <div className="sticky top-0 z-40 w-full bg-white/85 backdrop-blur-md border-b border-slate-200/80 shadow-xs">
+        <div className="max-w-[1120px] mx-auto px-4 sm:px-6 lg:px-8 py-2.5">
           <div className="flex items-center justify-between gap-4">
             {/* Logo */}
             <a href="#" className="flex items-center gap-2 group">
@@ -45,13 +45,38 @@ export function Hero() {
               />
             </a>
 
-            {/* Quick Navigation Links */}
-            <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
-              <a href="#who-this-is-for" className="hover:text-blue-600 transition-colors">About</a>
-              <a href="#curriculum" className="hover:text-blue-600 transition-colors">Curriculum</a>
-              <a href="#mentors" className="hover:text-blue-600 transition-colors">Mentors</a>
-              <a href="#reviews" className="hover:text-blue-600 transition-colors">Reviews</a>
-              <a href="#faq" className="hover:text-blue-600 transition-colors">FAQs</a>
+            {/* Premium Floating Glass Pill Navigation Bar */}
+            <nav className="hidden md:flex items-center p-1 rounded-full bg-slate-100/90 border border-slate-200/80 backdrop-blur-sm shadow-inner gap-1">
+              <a
+                href="#who-this-is-for"
+                className="px-4 py-1.5 rounded-full text-xs font-semibold text-slate-700 hover:text-blue-600 hover:bg-white hover:shadow-xs transition-all duration-200"
+              >
+                About
+              </a>
+              <a
+                href="#curriculum"
+                className="px-4 py-1.5 rounded-full text-xs font-semibold text-slate-700 hover:text-blue-600 hover:bg-white hover:shadow-xs transition-all duration-200"
+              >
+                Curriculum
+              </a>
+              <a
+                href="#mentors"
+                className="px-4 py-1.5 rounded-full text-xs font-semibold text-slate-700 hover:text-blue-600 hover:bg-white hover:shadow-xs transition-all duration-200"
+              >
+                Mentors
+              </a>
+              <a
+                href="#reviews"
+                className="px-4 py-1.5 rounded-full text-xs font-semibold text-slate-700 hover:text-blue-600 hover:bg-white hover:shadow-xs transition-all duration-200"
+              >
+                Reviews
+              </a>
+              <a
+                href="#faq"
+                className="px-4 py-1.5 rounded-full text-xs font-semibold text-slate-700 hover:text-blue-600 hover:bg-white hover:shadow-xs transition-all duration-200"
+              >
+                FAQs
+              </a>
             </nav>
 
             {/* Right side CTA / Countdown badge */}
@@ -74,7 +99,7 @@ export function Hero() {
       </div>
 
       {/* Hero Core Content: 2 Columns on lg (max-w-[1120px]) */}
-      <section className="relative z-10 max-w-[1120px] mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
+      <section className="relative z-10 max-w-[1120px] mx-auto px-4 sm:px-6 lg:px-8 pt-10 md:pt-16 pb-12">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           {/* Left Column: Text (max-w-[620px]) */}
           <div className="lg:col-span-7 max-w-[620px] text-left">
@@ -192,15 +217,17 @@ export function Hero() {
             </div>
           </div>
         </ScrollReveal>
-
-        {/* Scroll Indicator */}
-        <div className="mt-16 md:mt-20 flex flex-col items-center justify-center gap-2 text-slate-400 text-xs font-mono tracking-widest uppercase">
-          <span>Scroll to Explore</span>
-          <div className="w-5 h-8 rounded-full border border-slate-300 flex items-start justify-center p-1">
-            <div className="w-1 h-2 bg-blue-600 rounded-full animate-bounce" />
-          </div>
-        </div>
       </section>
+
+      {/* Grounded White Bottom Strip: Scroll to Explore */}
+      <div className="relative z-20 w-full bg-white border-t border-slate-200/80 py-4 flex flex-col items-center justify-center gap-1.5 shadow-2xs">
+        <span className="text-slate-400 text-[11px] font-mono tracking-widest uppercase font-medium">
+          Scroll to Explore
+        </span>
+        <div className="w-5 h-7 rounded-full border-2 border-slate-300 flex items-start justify-center p-1">
+          <div className="w-1 h-2 bg-blue-600 rounded-full animate-bounce" />
+        </div>
+      </div>
     </header>
   );
 }
