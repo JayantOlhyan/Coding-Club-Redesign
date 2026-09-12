@@ -59,6 +59,9 @@ export const UNTRACKED_TEXT_ALLOWLIST: (string | RegExp)[] = [
   /^(Target Role|Career Pivot|Beginner Friendly|Zero To Hero|Job Ready)$/,
   // Opening Preloader Animation UI labels
   /^(INITIALIZING EXPERIENCE\.\.\.|CODING MAFIA BATCH 2026|100%|Loading\.\.\.)$/,
+  /^\d{1,3}%$/,
+  /^\d{1,3}$/,
+  /^%$/,
 ];
 
 const MIME_TYPES: Record<string, string> = {
