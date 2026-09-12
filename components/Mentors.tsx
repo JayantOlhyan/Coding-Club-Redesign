@@ -169,7 +169,7 @@ export function Mentors() {
             </h3>
           </ScrollReveal>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+          <div className="flex md:grid flex-nowrap md:flex-wrap overflow-x-auto md:overflow-x-visible gap-4 md:gap-6 lg:gap-8 pb-3 md:pb-0 snap-x touch-pan-x no-scrollbar -mx-4 px-4 md:mx-0 md:px-0 md:grid-cols-3">
             {taMentors.map((m, i) => {
               const photoBlock = getBlock<ImageBlock>(m.photo);
               const photoMeta = getImageMeta(photoBlock.src);
@@ -178,7 +178,7 @@ export function Mentors() {
               const bioBlock = getBlock<ParagraphBlock>(m.bio);
 
               return (
-                <ScrollReveal key={m.id} direction="up" delay={150 + i * 80}>
+                <ScrollReveal key={m.id} direction="up" delay={150 + i * 80} className="snap-start shrink-0 w-[82vw] max-w-[320px] md:w-auto md:max-w-none">
                   <MotionCard className="h-full flex flex-col justify-between shadow-sm">
                     <div>
                       <div className="flex items-center gap-3 mb-4">
