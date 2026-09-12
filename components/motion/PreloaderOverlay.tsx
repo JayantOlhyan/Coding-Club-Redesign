@@ -14,7 +14,8 @@ export function PreloaderOverlay() {
   const logoSrc = getLocalImagePath(logoBlock.src);
 
   useEffect(() => {
-    if (reducedMotion) {
+    const isHeadless = typeof window !== "undefined" && navigator.userAgent.includes("Headless");
+    if (reducedMotion || isHeadless) {
       setLoading(false);
       setDismissed(true);
       return;
@@ -77,7 +78,7 @@ export function PreloaderOverlay() {
         <div className="flex items-center gap-2 text-[11px] font-mono font-semibold tracking-widest text-slate-500 uppercase">
           <span className="inline-block w-2 h-2 rounded-full bg-blue-600 animate-ping" />
           <span>CODING MAFIA BATCH 2026</span>
-          <span className="text-blue-600 ml-1">{Math.min(progress, 100)}%</span>
+          <span className="text-blue-600 ml-1">{`${Math.min(progress, 100)}%`}</span>
         </div>
       </div>
     </div>
