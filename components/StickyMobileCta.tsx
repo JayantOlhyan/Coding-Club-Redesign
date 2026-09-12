@@ -25,16 +25,15 @@ export function StickyMobileCta() {
   return (
     <aside
       aria-label="Quick registration"
-      className={`fixed bottom-0 left-0 right-0 z-40 md:hidden bg-[var(--ink-surface)] border-t border-[var(--border)] transition-transform duration-300 ease-in-out pb-[env(safe-area-inset-bottom)] ${
+      className={`fixed bottom-0 left-0 right-0 z-40 md:hidden bg-white/95 backdrop-blur-md border-t border-slate-200/90 transition-transform duration-300 ease-in-out pb-[env(safe-area-inset-bottom)] shadow-lg ${
         visible ? "translate-y-0" : "translate-y-full"
       }`}
-      style={{ maxHeight: "72px" }}
     >
-      <div className="flex items-center justify-center h-16 px-4">
+      <div className="flex items-center justify-center py-2.5 px-4">
         <a
           href="#lead-form"
           data-block={SECTION_MAP.hero.ctas.join(",")}
-          className="inline-flex items-center justify-center w-full max-w-sm h-11 rounded bg-[var(--accent)] hover:bg-[var(--accent-hover)] text-[var(--ink-surface)] font-semibold text-base transition-colors focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[var(--accent)] focus-visible:outline-none shadow-sm cursor-pointer"
+          className="inline-flex items-center justify-center w-full max-w-md min-h-[48px] px-6 py-3 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-semibold text-base transition-all shadow-md shadow-blue-600/25 active:scale-[0.98] cursor-pointer"
         >
           {ctaBlock.text}
         </a>
