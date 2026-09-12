@@ -16,7 +16,7 @@ import { StickyMobileCta } from "@/components/StickyMobileCta";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[var(--surface)] pb-20 md:pb-0">
+    <main className="min-h-screen bg-[var(--surface)] pb-20 md:pb-0 w-full max-w-full overflow-x-hidden">
       {/* Section 1: Hero */}
       <Hero />
 
