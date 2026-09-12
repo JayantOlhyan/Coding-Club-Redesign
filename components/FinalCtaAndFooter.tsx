@@ -121,10 +121,12 @@ export function FinalCtaAndFooter() {
                     placeholder={f11.placeholder}
                     aria-label={f11.placeholder}
                     required
+                    inputMode="text"
+                    autoComplete="name"
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                     data-block={SECTION_MAP.finalCtaAndFooter.fields[0]}
-                    className="w-full px-4 py-3.5 rounded-xl border border-slate-800 bg-slate-900 text-white placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-500 text-base"
+                    className="w-full min-h-[48px] px-4 py-3.5 rounded-xl border border-slate-800 bg-slate-900 text-white placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-500 text-base"
                   />
                 </div>
 
@@ -135,10 +137,12 @@ export function FinalCtaAndFooter() {
                     placeholder={f12.placeholder}
                     aria-label={f12.placeholder}
                     required
+                    inputMode="email"
+                    autoComplete="email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     data-block={SECTION_MAP.finalCtaAndFooter.fields[1]}
-                    className="w-full px-4 py-3.5 rounded-xl border border-slate-800 bg-slate-900 text-white placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-500 text-base"
+                    className="w-full min-h-[48px] px-4 py-3.5 rounded-xl border border-slate-800 bg-slate-900 text-white placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-500 text-base"
                   />
                 </div>
 
@@ -149,10 +153,12 @@ export function FinalCtaAndFooter() {
                     placeholder={f13.placeholder}
                     aria-label={f13.placeholder}
                     required
+                    inputMode="tel"
+                    autoComplete="tel"
                     value={phone}
                     onChange={(e) => setPhone(e.target.value)}
                     data-block={SECTION_MAP.finalCtaAndFooter.fields[2]}
-                    className="w-full px-4 py-3.5 rounded-xl border border-slate-800 bg-slate-900 text-white placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-500 text-base"
+                    className="w-full min-h-[48px] px-4 py-3.5 rounded-xl border border-slate-800 bg-slate-900 text-white placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-500 text-base"
                   />
                 </div>
 
