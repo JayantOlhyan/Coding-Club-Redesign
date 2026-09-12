@@ -47,47 +47,85 @@ export function Curriculum() {
           </div>
         </ScrollReveal>
 
-        {/* 6-Month Timeline Progress Bar */}
+        {/* 6-Month Timeline Progress Bar (Responsive Mobile & Desktop) */}
         <ScrollReveal direction="up" delay={100}>
-          <div className="mb-12 overflow-x-auto pb-4 no-scrollbar max-w-full">
-            <div className="flex items-center min-w-[640px] justify-between relative px-2">
-              {/* Connecting line */}
-              <div className="absolute top-1/2 left-0 right-0 h-[2px] bg-slate-200 -translate-y-1/2 z-0" />
-              <div
-                className="absolute top-1/2 left-0 h-[2px] bg-blue-600 -translate-y-1/2 z-0 transition-all duration-300"
-                style={{ width: `${(activeMonthIdx / (JOURNEY_MONTHS.length - 1)) * 100}%` }}
-              />
+          <div className="mb-10 w-full">
+            {/* Desktop Timeline (md+) */}
+            <div className="hidden md:block relative px-4 py-6 rounded-2xl bg-white border border-slate-200/90 shadow-sm metallic-panel">
+              <div className="flex items-center justify-between relative z-10">
+                {/* Background Connecting Line */}
+                <div className="absolute top-5 left-8 right-8 h-[3px] bg-slate-200 -translate-y-1/2 z-0" />
+                {/* Active Progress Fill */}
+                <div
+                  className="absolute top-5 left-8 h-[3px] bg-blue-600 -translate-y-1/2 z-0 transition-all duration-500 ease-out"
+                  style={{ width: `calc(${activeMonthIdx} * (100% - 4rem) / ${JOURNEY_MONTHS.length - 1})` }}
+                />
 
-              {JOURNEY_MONTHS.map((item, idx) => {
-                const isActive = idx === activeMonthIdx;
-                return (
-                  <button
-                    key={item.month}
-                    onClick={() => setActiveMonthIdx(idx)}
-                    className={`relative z-10 flex flex-col items-center gap-2 group cursor-pointer transition-all duration-200 ${
-                      isActive ? "scale-105" : "opacity-70 hover:opacity-100"
-                    }`}
-                  >
-                    <div
-                      className={`w-10 h-10 rounded-full flex items-center justify-center font-mono text-xs font-bold transition-all duration-200 border ${
-                        isActive
-                          ? "bg-blue-600 text-white border-blue-600 shadow-md shadow-blue-500/25 ring-4 ring-blue-100"
-                          : "bg-white text-slate-600 border-slate-300 group-hover:border-blue-400"
+                {JOURNEY_MONTHS.map((item, idx) => {
+                  const isActive = idx === activeMonthIdx;
+                  return (
+                    <button
+                      key={item.month}
+                      onClick={() => setActiveMonthIdx(idx)}
+                      className={`relative z-10 flex flex-col items-center gap-2.5 group cursor-pointer transition-all duration-300 ${
+                        isActive ? "scale-105" : "opacity-75 hover:opacity-100"
                       }`}
                     >
-                      0{idx + 1}
-                    </div>
-                    <div className="text-center">
-                      <span className={`block text-[11px] font-mono font-semibold tracking-wider ${isActive ? "text-blue-600" : "text-slate-500"}`}>
-                        {item.month}
+                      <div
+                        className={`w-10 h-10 rounded-full flex items-center justify-center font-mono text-xs font-bold transition-all duration-300 border ${
+                          isActive
+                            ? "bg-blue-600 text-white border-blue-600 shadow-md shadow-blue-500/30 ring-4 ring-blue-100"
+                            : "bg-white text-slate-700 border-slate-300 group-hover:border-blue-400 group-hover:shadow-xs"
+                        }`}
+                      >
+                        0{idx + 1}
+                      </div>
+                      <div className="text-center">
+                        <span className={`block text-[11px] font-mono font-semibold tracking-wider ${isActive ? "text-blue-600" : "text-slate-400"}`}>
+                          {item.month}
+                        </span>
+                        <span className={`block text-xs md:text-sm font-semibold whitespace-nowrap mt-0.5 ${isActive ? "text-slate-900" : "text-slate-600"}`}>
+                          {item.title}
+                        </span>
+                      </div>
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+
+            {/* Mobile Touch Swipeable Pill Bar (<md) */}
+            <div className="block md:hidden">
+              <div className="flex items-center gap-2.5 overflow-x-auto pb-2 px-1 no-scrollbar snap-x touch-pan-x">
+                {JOURNEY_MONTHS.map((item, idx) => {
+                  const isActive = idx === activeMonthIdx;
+                  return (
+                    <button
+                      key={item.month}
+                      onClick={() => setActiveMonthIdx(idx)}
+                      className={`snap-start shrink-0 px-3.5 py-2.5 rounded-xl border text-left flex items-center gap-3 transition-all duration-200 cursor-pointer ${
+                        isActive
+                          ? "bg-blue-600 text-white border-blue-600 shadow-md shadow-blue-500/20"
+                          : "bg-white text-slate-700 border-slate-200/90 hover:border-slate-300 shadow-2xs"
+                      }`}
+                    >
+                      <span className={`w-7 h-7 rounded-full flex items-center justify-center font-mono text-xs font-bold ${
+                        isActive ? "bg-white/20 text-white" : "bg-slate-100 text-slate-700"
+                      }`}>
+                        0{idx + 1}
                       </span>
-                      <span className={`block text-xs font-medium max-w-[95px] truncate ${isActive ? "text-slate-900" : "text-slate-500"}`}>
-                        {item.title}
-                      </span>
-                    </div>
-                  </button>
-                );
-              })}
+                      <div>
+                        <span className={`block text-[10px] font-mono tracking-wider font-semibold ${isActive ? "text-blue-100" : "text-slate-400"}`}>
+                          {item.month}
+                        </span>
+                        <span className="block text-xs font-semibold whitespace-nowrap">
+                          {item.title}
+                        </span>
+                      </div>
+                    </button>
+                  );
+                })}
+              </div>
             </div>
           </div>
         </ScrollReveal>
@@ -99,11 +137,16 @@ export function Curriculum() {
             const hTitle = getBlock<HeadingBlock>(m.headings[1]);
             const hSub = getBlock<HeadingBlock>(m.headings[2]);
             const desc = getBlock<ParagraphBlock>(m.description);
+            const isBelongingToActiveMonth = JOURNEY_MONTHS[activeMonthIdx]?.modules.includes(m.number);
 
             return (
               <ScrollReveal key={m.number} direction="up" delay={100 + m.number * 40}>
                 <details
-                  className="group rounded-2xl border border-slate-200 border-l-4 border-l-slate-300 group-open:border-l-blue-600 bg-white overflow-hidden shadow-xs hover:shadow-md transition-all duration-200"
+                  className={`group rounded-2xl border transition-all duration-300 overflow-hidden shadow-xs hover:shadow-md ${
+                    isBelongingToActiveMonth
+                      ? "border-blue-300 border-l-4 border-l-blue-600 bg-gradient-to-r from-blue-50/40 via-white to-white ring-2 ring-blue-500/15"
+                      : "border-slate-200 border-l-4 border-l-slate-300 group-open:border-l-blue-600 bg-white"
+                  }`}
                 >
                   <summary className="flex items-start justify-between p-5 md:p-6 cursor-pointer list-none [&::-webkit-details-marker]:hidden select-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-600 gap-4 sm:gap-6">
                     <div className="flex items-start gap-4 sm:gap-6 text-left">
