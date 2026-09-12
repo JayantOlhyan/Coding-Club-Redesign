@@ -51,16 +51,16 @@ export function WhoThisIsFor() {
           </div>
         </ScrollReveal>
 
-        {/* 2-Column Grid: 6 Value / Persona Cards with Image Accent */}
+        {/* Responsive Grid / Mobile Swipe Rail */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-          {/* Card Grid (8 Cols on Desktop) */}
-          <div className="lg:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+          {/* Card Container: Mobile touch carousel (<md) / 2-Col Grid (md+) */}
+          <div className="lg:col-span-8 flex md:grid flex-nowrap md:flex-wrap overflow-x-auto md:overflow-x-visible gap-4 md:gap-6 pb-3 md:pb-0 snap-x touch-pan-x no-scrollbar -mx-4 px-4 md:mx-0 md:px-0 md:grid-cols-2">
             {items.map((item, i) => {
               const blockIdx = SECTION_MAP.whoThisIsFor.items[i];
               return (
-                <ScrollReveal key={blockIdx} direction="up" delay={100 + i * 60}>
+                <ScrollReveal key={blockIdx} direction="up" delay={100 + i * 60} className="snap-start shrink-0 w-[82vw] max-w-[320px] md:w-auto md:max-w-none">
                   <MotionCard className="h-full flex flex-col justify-between hover:border-blue-400/60 transition-all duration-300">
-                    <div className="flex items-start gap-4">
+                    <div className="flex items-start gap-3.5">
                       <span
                         className="inline-flex items-center justify-center w-7 h-7 rounded-full bg-blue-50 text-blue-600 border border-blue-200 shrink-0 mt-0.5"
                         aria-hidden="true"
@@ -71,7 +71,7 @@ export function WhoThisIsFor() {
                       </span>
                       <p
                         data-block={blockIdx}
-                        className="text-base lg:text-[17px] font-normal text-slate-700 leading-[1.6]"
+                        className="text-sm sm:text-base lg:text-[17px] font-normal text-slate-700 leading-[1.6]"
                       >
                         {item.text}
                       </p>
