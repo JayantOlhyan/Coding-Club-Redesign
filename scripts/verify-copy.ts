@@ -57,6 +57,8 @@ export const UNTRACKED_TEXT_ALLOWLIST: (string | RegExp)[] = [
   /^(React|Next\.js|TypeScript|Node\.js|Python|PyTorch|PostgreSQL|Docker|System Design|Data Structures|Machine Learning|Full Stack|AWS|Git|Linux)$/,
   /^(100% Live Mentorship|Interactive IDE|Live Code Reviews|1:1 Doubt Support|Portfolio Projects|Mock Interviews)$/,
   /^(Target Role|Career Pivot|Beginner Friendly|Zero To Hero|Job Ready)$/,
+  // Opening Preloader Animation UI labels
+  /^(INITIALIZING EXPERIENCE\.\.\.|CODING MAFIA BATCH 2026|100%|Loading\.\.\.)$/,
 ];
 
 const MIME_TYPES: Record<string, string> = {
