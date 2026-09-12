@@ -1,5 +1,6 @@
 import { Hero } from "@/components/Hero";
 import { TrustBar } from "@/components/TrustBar";
+import { PreloaderOverlay } from "@/components/motion/PreloaderOverlay";
 import { WhoThisIsFor } from "@/components/WhoThisIsFor";
 import { CtaBandA, CtaBandB, CtaBandC, CtaBandD, CtaBandE } from "@/components/CtaBand";
 import { Benefits } from "@/components/Benefits";
@@ -17,6 +18,9 @@ import { StickyMobileCta } from "@/components/StickyMobileCta";
 export default function Home() {
   return (
     <main className="min-h-screen bg-[var(--surface)] pb-20 md:pb-0 w-full max-w-full overflow-x-hidden">
+      {/* Opening Preloader Splash Curtain */}
+      <PreloaderOverlay />
+
       {/* Section 1: Hero */}
       <Hero />
 
