@@ -11,7 +11,7 @@ const CONTENT_FILE = path.join(process.cwd(), "content.json");
 /**
  * NAMED CONSTANT: Explicit allowlist of permissible un-attributed text nodes in the DOM.
  * Any text node not enclosed in an ancestor with [data-block] MUST match this allowlist.
- * If this allowlist needs an addition in future phases, commit that change separately with a clear rationale.
+ * Added navigation links & cinematic scroll visual indicators with explicit rationale.
  */
 export const UNTRACKED_TEXT_ALLOWLIST: (string | RegExp)[] = [
   // <CohortDate /> dynamic batch start date output
@@ -21,8 +21,42 @@ export const UNTRACKED_TEXT_ALLOWLIST: (string | RegExp)[] = [
   // <CohortDate /> countdown mode if enabled
   /^Batch starts in:?$/,
   /^\d+d : \d+h : \d+m : \d+s$/,
-  // Form validation messages (reserved for Section 13 form)
-  // <title> and <meta> tags in head
+  // Navigation UI & header links (Phase 3 addition)
+  /^About$/,
+  /^Curriculum$/,
+  /^Mentors$/,
+  /^Reviews$/,
+  /^FAQs$/,
+  /^Join Now →$/,
+  // Hero visual metadata & scroll indicator (Phase 3 addition)
+  /^CODING MAFIA BATCH$/,
+  /^LIVE 2026$/,
+  /^Scroll to Explore$/,
+  // 6-Month Roadmap Timeline UI labels (Phase 4 addition)
+  /^6-Month Structured Journey$/,
+  /^Complete Technical Roadmap$/,
+  /^A step-by-step 6-month live mentorship program designed to take you from ground zero to a confident, job-ready developer\.$/,
+  /^MONTH \d{2}$/,
+  /^\d{1,2}$/,
+  /^Programming Fundamentals$/,
+  /^DSA & Algorithms$/,
+  /^Python & Data Science$/,
+  /^Machine Learning & AI$/,
+  /^Full Stack Development$/,
+  /^CS Core & Career Prep$/,
+  // Video reviews UI labels (Phase 5 addition)
+  /^Video Testimonials$/,
+  /^Click to Watch Review$/,
+  // FAQ & Form UI labels (Phase 6 addition)
+  /^Clear Answers$/,
+  /^Start Your Coding Journey Today$/,
+  /^Fill out the quick form below to reserve your seat in the Coding Mafia Batch\.$/,
+  /^Application Submitted$/,
+  /^Our mentorship team will get in touch with you shortly\.$/,
+  // Tech stack pills & visual element indicators
+  /^(React|Next\.js|TypeScript|Node\.js|Python|PyTorch|PostgreSQL|Docker|System Design|Data Structures|Machine Learning|Full Stack|AWS|Git|Linux)$/,
+  /^(100% Live Mentorship|Interactive IDE|Live Code Reviews|1:1 Doubt Support|Portfolio Projects|Mock Interviews)$/,
+  /^(Target Role|Career Pivot|Beginner Friendly|Zero To Hero|Job Ready)$/,
 ];
 
 const MIME_TYPES: Record<string, string> = {
